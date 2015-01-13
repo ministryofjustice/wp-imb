@@ -1,0 +1,207 @@
+//* {outline: 1px solid #ccc;}
+
+.navbar-default {
+  background-color: @navbar-default-bg;
+  border: 0;
+  }
+
+/* - - - - - - Logo - - - - - - */
+
+ #branding {
+ 	margin:1em 0 0 0;
+ 	display: inline-block;
+ 	width: 33%;
+
+	 	img {
+	 		max-width: 100%;
+	 	}
+
+
+ }
+
+/* - - - - - - Navigation - - - - - - */
+
+.navbar {
+	margin-bottom: .5em;
+}
+
+.navbar-header {
+  margin-top: .5em;
+}
+
+ .navbar-nav {
+ 	display: inline-block; margin: 0 auto;
+ }
+
+ .navbar-default .navbar-collapse {
+ 	margin: 1em 0;
+ 	width: 100%;
+ 	text-align: center;
+ 	padding: 0;
+  border-top: 0;
+
+ 		ul#menu-primary-navigation {
+ 			display:inline-block;
+ 			width: 100%;
+ 			margin: 0;
+ 			padding: 0;			
+ 	}
+
+ 		@media only screen and (min-width:768px) {
+ 			background: #f8ccd6;
+ 		}
+
+ }
+
+   .navbar-default .navbar-nav li {
+   		text-align: center;
+   		width: 49.3%;
+   		float: left;
+   		margin-bottom: 4px;
+
+   			&:nth-child(odd) {
+   				margin-right: 4px;
+   			}
+
+        &:nth-child(even) {
+          margin-right: 0px;
+        }
+
+
+ 		@media only screen and (min-width:768px) {
+ 			width: 12.5%;
+      max-width: calc(100% / 8);
+ 			margin-bottom: 0;
+
+ 			   	&:nth-child(odd) {
+   				margin-right: 0;
+   			}
+ 		}
+
+
+   	}
+
+ .navbar-default .navbar-nav li a, .navbar-default .navbar-nav > .open > a {
+ 	color: @navbar-default-link-color; 
+ 	display: block;
+ 	// height: 100%;
+ 	// width: 100%;
+ 	font-weight: 500;
+  font-size: .9em;
+  padding: 14px 0;
+ 	background: @navbar-default-link-bg url(0);
+
+ 		&:hover { 
+ 			background-color:@navbar-default-link-hover-bg; 
+ 		}
+
+ 		@media only screen and (min-width:768px) {
+ 			background: @navbar-default-link-bg url(/lawcommission/wp-content/themes/wp-lawcom/assets/img/nav-divider.gif) no-repeat 100% 50%;
+ 		}
+
+    @media only screen and (min-width:992px) {
+        font-size: 1em;
+    }
+ }
+
+
+
+  .navbar-default .navbar-nav li:last-child a{
+ 	background: #f8ccd6;
+
+ 		&:hover {
+ 			background: @navbar-default-link-hover-bg;
+ 		}
+ }
+
+.navbar-default .navbar-nav li.active:last-child a {
+ 	background: @navbar-default-link-hover-bg;
+ }
+
+ .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+ 	 color: @navbar-default-link-color;
+  	 background-color:@navbar-default-link-hover-bg; 
+
+ }
+
+.navbar-default button.navbar-toggle, .navbar-default button.navbar-toggle:focus, .navbar-default button.navbar-toggle:active, .navbar-default button.navbar-toggle:hover {
+ 	background: #f8ccd6;
+ }
+
+
+.navbar-nav .open .dropdown-menu {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  min-width: 200px;
+  margin-top: 4px;
+
+    @media only screen and (min-width:768px) {
+        margin-top: 0;
+    }
+}
+
+.dropdown ul.dropdown-menu li {
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+  display: inline-block;
+
+   @media only screen and (min-width:768px) {
+      margin-bottom: 4px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+    }
+
+    a {
+      background: @navbar-default-link-hover-bg url(0)!important;
+      padding: 8px;
+      width: 100%;
+      height: 100%;
+      font-size: .9em;
+      white-space: normal;
+
+            @media only screen and (min-width:768px) {
+                font-size: 1em;
+                //margin-bottom: 4px;
+    }
+
+    }
+
+    a:hover, a:active, a:focus {
+      background: @navbar-default-link-hover-dropdown-bg url(0)!important;
+      color: @navbar-default-link-color;
+    }
+  
+}
+
+/* - - - - - - Search - - - - - - */
+
+ #search {
+ 	float: right; 
+ 	display: inline-block; 
+ 	margin: 1em 0 0 0;
+ 	width: 50%;
+
+ 		@media only screen and (min-width:768px) {
+ 			width: auto;
+ 			 	margin: 4em 0 0 0;
+ 		}
+ }
+
+ .form-control {
+ 	border-radius: 0;
+ 	padding: 6px 12px 2px 8px;
+
+ }
+
+ .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+ 	border: 0;
+ 	padding: 0;
+ 	margin: 0 0 0 15px;
+ }
+
+
