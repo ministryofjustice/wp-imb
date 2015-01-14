@@ -12,7 +12,7 @@
 
 
   	<div class="row">
-  		<div class="col-md-3 min-col">
+  		<div class="col-sm-3 min-col">
   			<div class="quick-links side-item">
   				<ul>
   					<li><a href="#">Vacancies ></a></li>
@@ -39,7 +39,7 @@
   				</ul>
   			</div>
   		</div>
-  		<div class="col-md-9 max-col">
+  		<div class="col-sm-9 max-col">
 			<div class="intro main-item">
 				<h2>Welcome to the official website of the Indepentent Monitoring Board</h2>
 				<?php the_excerpt(); ?>
