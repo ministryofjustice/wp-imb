@@ -43,12 +43,13 @@
  		ul#menu-primary-navigation {
  			display:inline-block;
  			width: 100%;
+      overflow: hidden;
  			margin: 0;
  			padding: 0;			
  	}
 
  		@media only screen and (min-width:768px) {
- 			background: #f8ccd6;
+ 			background: @navbar-default-link-bg;
  		}
 
  }
@@ -58,6 +59,7 @@
    		width: 49.3%;
    		float: left;
    		margin-bottom: 4px;
+      position: relative;
 
    			&:nth-child(odd) {
    				margin-right: 4px;
@@ -96,7 +98,10 @@
  		}
 
  		@media only screen and (min-width:768px) {
- 			background: @navbar-default-link-bg url(/lawcommission/wp-content/themes/wp-lawcom/assets/img/nav-divider.gif) no-repeat 100% 50%;
+
+ 			background: @navbar-default-link-bg url("/imb/wp-content/themes/imb/assets/img/nav-divider.gif") no-repeat 100% 50%;
+
+
  		}
 
     @media only screen and (min-width:992px) {
@@ -104,10 +109,7 @@
     }
  }
 
-
-
   .navbar-default .navbar-nav li:last-child a{
- 	background: #f8ccd6;
 
  		&:hover {
  			background: @navbar-default-link-hover-bg;
@@ -125,7 +127,7 @@
  }
 
 .navbar-default button.navbar-toggle, .navbar-default button.navbar-toggle:focus, .navbar-default button.navbar-toggle:active, .navbar-default button.navbar-toggle:hover {
- 	background: #f8ccd6;
+ 	background: @brand-primary;
  }
 
 

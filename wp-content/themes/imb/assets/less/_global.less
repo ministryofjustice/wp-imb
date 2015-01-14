@@ -1,7 +1,9 @@
+// *  { outline: 1px solid grey; }
+
 body {font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif}
 
-.container {
-	width: 100%;
+a {
+	color: @body-text-link;
 }
 
 .page-header {
@@ -10,4 +12,50 @@ body {font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif}
 		h1 {
 			margin-top: 0;
 		}
+}
+
+.min-col {
+
+
+}
+
+.max-col {
+	border-left: 1px solid #c5c5c5;
+}
+
+.main-item {
+	display: inline-block;
+	border-bottom: 1px solid #c5c5c5;
+	padding-bottom: 1em;
+}
+
+.side-item {
+	display: block;
+	border-bottom: 5px solid #6895bc;
+	padding-bottom: 1em;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		a {
+			color: @body-text-link;
+		}
+	}
+
+.more-link {
+	display: block;
+	margin: 1em 0 0 0;
+}
+
+.em-link {
+	font-size: 1.4em;
+	padding: 2px 6px 0px 6px;
+	background: @brand-primary;
 }

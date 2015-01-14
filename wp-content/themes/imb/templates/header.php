@@ -2,7 +2,7 @@
   <div class="container">
 
 <div id="branding">
-<img alt="Law Commission Logo" src="wp-content/themes/imb/assets/img/imb-logo.jpg"/>
+<a href="/imb/"><img alt="IMB Logo" src="/imb/wp-content/themes/imb/assets/img/imb-logo.jpg"/></a>
 </div>
 
 <div id="search">
