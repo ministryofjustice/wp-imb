@@ -6212,7 +6212,7 @@ a {
 }
 .side-item {
   display: block;
-  border-bottom: 5px solid #6895bc;
+  border-bottom: 5px solid #6894bb;
   padding-bottom: 1em;
 }
 .side-item:last-child {
@@ -6425,7 +6425,7 @@ figure.alignnone {
   }
 }
 .dropdown ul.dropdown-menu li a {
-  background: #f6f9fb url(0) !important;
+  background: #e1eaf1 url(0) !important;
   padding: 8px;
   width: 100%;
   height: 100%;
@@ -6440,7 +6440,7 @@ figure.alignnone {
 .dropdown ul.dropdown-menu li a:hover,
 .dropdown ul.dropdown-menu li a:active,
 .dropdown ul.dropdown-menu li a:focus {
-  background: #ffffff url(0) !important;
+  background: #f6f9fb url(0) !important;
   color: #000000;
 }
 /* - - - - - - Search - - - - - - */
@@ -6508,8 +6508,8 @@ figure.alignnone {
   bottom: 0;
   width: 66.6666%;
   height: auto;
-  background-color: #6895bc;
-  background-color: rgba(104, 149, 188, 0.9);
+  background-color: #6894bb;
+  background-color: rgba(104, 148, 187, 0.9);
   padding: 15px;
   color: #ffffff;
 }
