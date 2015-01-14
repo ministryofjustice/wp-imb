@@ -6343,8 +6343,8 @@ figure.alignnone {
 }
 @media only screen and (min-width: 768px) {
   .navbar-default .navbar-nav li {
-    width: 12.5%;
-    max-width: calc(12.5%);
+    width: 14.285714286%;
+    max-width: calc(14.28571429%);
     margin-bottom: 0;
   }
   .navbar-default .navbar-nav li:nth-child(odd) {
@@ -6357,7 +6357,7 @@ figure.alignnone {
   display: block;
   font-weight: 500;
   font-size: .9em;
-  padding: 14px 0;
+  padding: 1em;
   background: #e1eaf1 url(0);
 }
 .navbar-default .navbar-nav li a:hover,
@@ -6378,6 +6378,9 @@ figure.alignnone {
 }
 .navbar-default .navbar-nav li:last-child a:hover {
   background: #f6f9fb;
+}
+.navbar-default .navbar-nav li:last-child a {
+  background: #e1eaf1;
 }
 .navbar-default .navbar-nav li.active:last-child a {
   background: #f6f9fb;

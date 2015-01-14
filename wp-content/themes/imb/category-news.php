@@ -32,7 +32,6 @@ Template Name: Category news archive
 	</ul>
 
 <div class="pagination">
-<p>la</p>
 	<?php echo paginate_links( $args ); ?>
 </div>
 
