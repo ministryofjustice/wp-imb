@@ -32,7 +32,7 @@ Template Name: Category news archive
 	</ul>
 
 <div class="pagination">
-	<?php echo paginate_links( $args ); ?>
+	<?php echo paginate_links(); ?>
 </div>
 
 <!-- <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
