@@ -3,85 +3,167 @@
 // Array hold all meta-boxes - slug param is custom to control which page it appears on
 $meta_boxes = array(
 	array(
-		'id' => 'project_meta_box',
-		'title' => 'Project Options',
-		'pages' => array( 'project' ),
+		'id' => 'homepage_meta_box',
+		'title' => 'Homepage Options',
+		'slug' => 'home',
+		'pages' => array( 'page' ),
 		'context' => 'normal',
 		'priority' => 'high',
 		'fields' => array(
 			array(
-				'id' => 'general-tab',
-				'label' => 'General',
+				'id' => 'welcome-title',
+				'label' => 'Welcome title',
+				'type' => 'text',
+				'desc' => 'Main title on homepage, underneath banner'
+			),
+			array(
+				'id' => 'banner-tab',
+				'label' => 'Banner',
 				'type' => 'tab'
 			),
 			array(
-				'id' => 'start-date',
-				'label' => 'Start date',
-				'type' => 'date_picker',
-				'desc' => 'The start date of the project (yyyy-mm-dd)'
+				'id' => 'banner_heading',
+				'label' => 'Banner heading',
+				'type' => 'text',
+				'desc' => 'Main heading in banner area'
 			),
 			array(
-				'id' => 'end-date',
-				'label' => 'End date',
-				'type' => 'date_picker',
-				'desc' => 'The end date of the project (yyyy-mm-dd)'
+				'id' => 'banner-sub-heading',
+				'label' => 'Banner sub-heading',
+				'type' => 'text',
+				'desc' => 'Sub-heading in banner area'
 			),
 			array(
-				'id' => 'description',
-				'label' => 'Project description',
-				'type' => 'textarea',
-				'desc' => 'A brief description of the project'
-			),
-			array(
-				'id' => 'status-tab',
-				'label' => 'Statuses',
+				'id' => 'quick-links-tab',
+				'label' => 'Quick links',
 				'type' => 'tab'
 			),
 			array(
-				'id' => 'project_status',
-				'label' => 'Project status',
-				'type' => 'textarea',
-				'desc' => 'The status of the project'
+				'id' => 'quick-link-1',
+				'label' => 'Quick link 1 text',
+				'type' => 'text',
+				'desc' => 'Text to display for the first quick link'
 			),
 			array(
-				'id' => 'implementation_status',
-				'label' => 'Implementation status',
-				'type' => 'textarea',
-				'desc' => 'The status of project implementation'
+				'id' => 'quick-link-1-page',
+				'label' => 'Quick link 1 destination',
+				'type' => 'page-select',
+				'desc' => 'Please select the destination page for the first link'
 			),
 			array(
-				'id' => 'search-tab',
-				'label' => 'Search',
+				'id' => 'quick-link-2',
+				'label' => 'Quick link 2 text',
+				'type' => 'text',
+				'desc' => 'Text to display for the second quick link'
+			),
+			array(
+				'id' => 'quick-link-2-page',
+				'label' => 'Quick link 2 destination',
+				'type' => 'page-select',
+				'desc' => 'Please select the destination page for the second link'
+			),
+			array(
+				'id' => 'quick-link-3',
+				'label' => 'Quick link 3 text',
+				'type' => 'text',
+				'desc' => 'Text to display for the third quick link'
+			),
+			array(
+				'id' => 'quick-link-3-page',
+				'label' => 'Quick link 3 destination',
+				'type' => 'page-select',
+				'desc' => 'Please select the destination page for the third link'
+			),
+			array(
+				'id' => 'quick-link-4',
+				'label' => 'Quick link 4 text',
+				'type' => 'text',
+				'desc' => 'Text to display for the fourth quick link'
+			),
+			array(
+				'id' => 'quick-link-4-page',
+				'label' => 'Quick link 4 destination',
+				'type' => 'page-select',
+				'desc' => 'Please select the destination page for the fourth link'
+			),
+			array(
+				'id' => 'sidebar-text-tab',
+				'label' => 'Sidebar text',
 				'type' => 'tab'
 			),
 			array(
-				'id' => 'keywords',
-				'label' => 'Search keywords',
-				'type' => 'textarea',
-				'desc' => 'A list of keywords to aid in discovering this project via search (comma seperated)'
-			)
+				'id' => 'sidebar-text-title',
+				'label' => 'Sidebar text title',
+				'type' => 'text',
+				'desc' => 'Sidebar title'
+			),
+			array(
+				'id' => 'sidebar-text-p1',
+				'label' => 'Sidebar text first para',
+				'type' => 'textarea-simple',
+				'desc' => 'First paragraph of sidebar body text'
+			),
+			array(
+				'id' => 'sidebar-text-p2',
+				'label' => 'Sidebar text second para',
+				'type' => 'textarea-simple',
+				'desc' => 'Second paragraph of sidebar body text'
+			),
+			array(
+				'id' => 'related-links',
+				'label' => 'Related links',
+				'type' => 'tab'
+			),
+			array(
+				'id' => 'related-1',
+				'label' => 'Related link 1 text',
+				'type' => 'text',
+				'desc' => 'Text to display for the first quick link'
+			),
+			array(
+				'id' => 'related-link-1',
+				'label' => 'Related link 1 URL',
+				'type' => 'text',
+				'desc' => 'The destination for the first related link'
+			),
+			array(
+				'id' => 'related-2',
+				'label' => 'Related link 2 text',
+				'type' => 'text',
+				'desc' => 'Text to display for the second quick link'
+			),
+			array(
+				'id' => 'related-link-2',
+				'label' => 'Related link 2 URL',
+				'type' => 'text',
+				'desc' => 'The destination for the second related link'
+			),
+			array(
+				'id' => 'related-3',
+				'label' => 'Related link 3 text',
+				'type' => 'text',
+				'desc' => 'Text to display for the third quick link'
+			),
+			array(
+				'id' => 'related-link-3',
+				'label' => 'Related link 3 URL',
+				'type' => 'text',
+				'desc' => 'The destination for the third related link'
+			),
+			array(
+				'id' => 'related-4',
+				'label' => 'Related link 4 text',
+				'type' => 'text',
+				'desc' => 'Text to display for the fourth quick link'
+			),
+			array(
+				'id' => 'related-link-4',
+				'label' => 'Related link 4 URL',
+				'type' => 'text',
+				'desc' => 'The destination for the fourth related link'
+			),
 		)
-	), //project_meta_box
-	array(
-		'id' => 'document_meta_box',
-		'title' => 'Document Options',
-		'pages' => array( 'document' ),
-		'context' => 'normal',
-		'priority' => 'high',
-		'fields' => array(
-			array(
-				'id' => 'general-tab',
-				'label' => 'General',
-				'type' => 'tab'
-			),
-			array(
-				'id' => 'document-type',
-				'label' => 'Document type',
-				'type' => 'custom-post-type-select',
-				'post_type' => 'document_type',
-				// 'top_level_only' => true,
-				'desc' => 'The primary document type. Altering this will change the subtypes available to select'
-			)
-		)
-	)
+	) 
+
+	//project_meta_box
 );
