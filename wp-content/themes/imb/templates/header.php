@@ -6,7 +6,7 @@
 </div>
 
 <div id="search">
-<?php get_search_form( $echo ); ?>
+<?php get_search_form( ); ?>
 </div>
 
     <div class="navbar-header">

@@ -38,12 +38,3 @@ foreach ( $roots_includes as $file ) {
 	require_once $filepath;
 }
 unset( $file, $filepath );
-
-function codex_custom_init() {
-    $args = array(
-      'public' => true,
-      'label'  => 'Reports'
-    );
-    register_post_type( 'report', $args );
-}
-add_action( 'init', 'codex_custom_init' );
