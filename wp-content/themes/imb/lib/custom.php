@@ -4,20 +4,21 @@
  * Custom functions
  */
 
-// Load CPTs
-// $cpt_declarations = scandir( get_template_directory() . "/lib/cpt/" );
-// foreach ( $cpt_declarations as $cpt_declaration ) {
-// 	if ( $cpt_declaration[0] != "." )
-// 		require get_template_directory() . '/lib/cpt/' . $cpt_declaration;
-// }
+//Load CPTs
 
-/* Get attachment ID from URL */
-function get_attachment_id_from_src( $image_src ) {
-	global $wpdb;
-	$query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$image_src'";
-	$id = $wpdb->get_var( $query );
-	return $id;
+$cpt_declarations = scandir( get_template_directory() . "/lib/cpt/" );
+foreach ( $cpt_declarations as $cpt_declaration ) {
+	if ( $cpt_declaration[0] != "." )
+		require get_template_directory() . '/lib/cpt/' . $cpt_declaration;
 }
+
+// /* Get attachment ID from URL */
+// function get_attachment_id_from_src( $image_src ) {
+// 	global $wpdb;
+// 	$query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$image_src'";
+// 	$id = $wpdb->get_var( $query );
+// 	return $id;
+// }
 
 /**
  * Meta Boxes

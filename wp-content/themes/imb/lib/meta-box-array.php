@@ -161,9 +161,24 @@ $meta_boxes = array(
 				'label' => 'Related link 4 URL',
 				'type' => 'text',
 				'desc' => 'The destination for the fourth related link'
-			),
+			)
+		)
+	), 
+
+array(
+		'id' => 'reports-upload-box',
+		'title' => 'Reports upload box',
+		//'slug' => 'report',
+		'pages' => array( 'report' ),
+		'context' => 'normal',
+		'priority' => 'low',
+		'fields' => array(
+			array(
+				'id' => 'report-upload',
+				'label' => 'PDF upload',
+				'type' => 'upload',
+				'desc' => 'Uplod PDF version of report'
+			)
 		)
 	) 
-
-	//project_meta_box
 );

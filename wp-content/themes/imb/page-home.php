@@ -1,14 +1,15 @@
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part( 'header'); ?>
 	
+	
+	  	<div id="news-banner" class="container-fluid">
+		  		<div class="news-banner-text">
+		  			<h2><?php echo get_post_meta( 5, "banner_heading", true ); ?></h2>
+		  			<p><?php echo get_post_meta( 5, "banner-sub-heading", true ); ?></p>
+		  			<a href="#" class= "float-right">Read more ></a>
+		  		</div>
+	  	</div>
 
-  	<div id="news-banner" class="container-fluid">
-  		<div class="news-banner-text">
-  			<h2><?php echo get_post_meta( 5, "banner_heading", true ); ?></h2>
-  			<p><?php echo get_post_meta( 5, "banner-sub-heading", true ); ?></p>
-  			<a href="#" class= "float-right">Read more ></a>
-  		</div>
-  	</div>
 
   	<div class="row">
   		<div class="col-sm-3 min-col">
