@@ -3124,7 +3124,6 @@ tbody.collapse.in {
   list-style: none;
   font-size: 14px;
   text-align: left;
-  background-color: #e1eaf1;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -3819,6 +3818,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
+  margin-top: -20px;
+}
+@media (min-width: 480px) {
+  .container > .navbar-header,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
+    margin-top: -40px;
+  }
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
@@ -3929,7 +3937,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
-    padding: 5px 15px 5px 25px;
+    padding: .9em;
   }
   .navbar-nav .open .dropdown-menu > li > a {
     line-height: 20px;
@@ -6226,6 +6234,10 @@ ul {
 ul a {
   color: #0071bc;
 }
+.widget {
+  border-bottom: 5px solid #6894bb;
+  padding-bottom: 1em;
+}
 .more-link {
   display: block;
   margin: 1em 0 0 0;
@@ -6234,6 +6246,17 @@ ul a {
   font-size: 1.4em;
   padding: 2px 6px 0px 6px;
   background: #e1eaf1;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 1em;
+  display: inline-block;
+}
+.em-link:hover {
+  color: #000000;
+}
+.post-date {
+  font-size: .75em;
+  color: #aaaaaa;
 }
 .gallery-row {
   padding: 10px 0;
@@ -6418,10 +6441,10 @@ figure.alignnone {
 }
 @media only screen and (min-width: 768px) {
   .dropdown ul.dropdown-menu li {
-    margin-bottom: 4px;
+    margin-top: 4px;
   }
-  .dropdown ul.dropdown-menu li:last-child {
-    margin-bottom: 0;
+  .dropdown ul.dropdown-menu li:first-child {
+    margin-top: 0;
   }
 }
 .dropdown ul.dropdown-menu li a {
@@ -6496,35 +6519,59 @@ figure.alignnone {
 #news-banner {
   display: block;
   margin-bottom: 2em;
-  height: 306px;
+  height: 153px;
   background-image: url("/imb/wp-content/themes/imb/assets/img/news-banner.jpg");
-  background-position: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+@media (min-width: 768px) {
+  #news-banner {
+    height: 306px;
+  }
 }
 #news-banner .news-banner-text {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 66.6666%;
+  width: 100%;
   height: auto;
   background-color: #6894bb;
   background-color: rgba(104, 148, 187, 0.9);
   padding: 15px;
   color: #ffffff;
 }
+@media (min-width: 991px) {
+  #news-banner .news-banner-text {
+    width: 66.6666%;
+    height: auto;
+  }
+}
 #news-banner .news-banner-text a {
   color: #ffffff;
 }
 #news-banner .news-banner-text h2 {
   margin: 0 0 10px 0;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  #news-banner .news-banner-text h2 {
+    font-size: 30px;
+  }
+}
+.intro {
+  display: none;
+}
+@media (min-width: 768px) {
+  .intro {
+    display: inline-block;
+  }
 }
 .intro h2 {
   margin-top: 0;
 }
 .container a.float-right {
-  color: #000000;
-  text-decoration: none;
   float: right;
 }
 .container .about a {
@@ -6568,10 +6615,6 @@ li .news-details h3 {
   font-size: 1.5em;
   color: #000000;
 }
-li .news-details .news-meta {
-  margin: 1em 0;
-  font-size: .95em;
-}
 li .news-details .home-news-img-wrapper {
   height: 300px;
   width: 100%;
@@ -6581,11 +6624,37 @@ li .news-details .home-news-img-wrapper {
 li .news-details .home-news-img-wrapper img {
   max-width: 100%;
 }
+.news-meta {
+  margin: 1em 0;
+  font-size: .95em;
+}
 .news-img-wrapper {
   float: right;
   margin: 0 0 20px 20px;
 }
 .links ul li {
   margin-bottom: .2em;
+}
+.archive-links {
+  -webkit-columns: 2 220px;
+  -moz-columns: 2 220px;
+  columns: 2 220px;
+  -webkit-column-gap: 6em;
+  -moz-column-gap: 6em;
+  column-gap: 6em;
+  -webkit-column-rule: 1px dotted #c5c5c5;
+  -moz-column-rule: 1px dotted #c5c5c5;
+  column-rule: 1px dotted #c5c5c5;
+}
+.archive-links li {
+  margin-bottom: 1.5em;
+}
+.archive-links li h4 {
+  font-weight: normal;
+  font-size: 16px;
+}
+.archive-links li h4 .file-meta {
+  font-size: .75em;
+  color: #aaaaaa;
 }
 /*# sourceMappingURL=main.css.map */

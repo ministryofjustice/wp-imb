@@ -109,6 +109,11 @@
   > .navbar-collapse {
     margin-right: -@navbar-padding-horizontal;
     margin-left:  -@navbar-padding-horizontal;
+    margin-top: -20px;
+
+    @media (min-width: 480px) {
+        margin-top: -40px;
+    }
 
     @media (min-width: @grid-float-breakpoint) {
       margin-right: 0;
@@ -247,7 +252,7 @@
       box-shadow: none;
       > li > a,
       .dropdown-header {
-        padding: 5px 15px 5px 25px;
+        padding: .9em;
       }
       > li > a {
         line-height: @line-height-computed;

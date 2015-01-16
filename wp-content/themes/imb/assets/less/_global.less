@@ -49,6 +49,11 @@ a {
 		}
 	}
 
+.widget {
+	border-bottom: 5px solid @brand-secondary;
+	padding-bottom: 1em;
+}
+
 .more-link {
 	display: block;
 	margin: 1em 0 0 0;
@@ -58,4 +63,17 @@ a {
 	font-size: 1.4em;
 	padding: 2px 6px 0px 6px;
 	background: @brand-primary;
+	color: @dark-text-clr;
+	text-decoration: none;
+	margin-top: 1em;
+	display: inline-block;
+
+	&:hover {
+		color: @dark-text-clr;
+	}
+}
+
+.post-date {
+     font-size: .75em;
+     color: @meta-text-clr;
 }
