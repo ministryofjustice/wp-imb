@@ -6279,6 +6279,10 @@ ul a {
 .btn img {
   width: auto;
 }
+.pagination span,
+.pagination a {
+  padding: 0 .3em;
+}
 .gallery-row {
   padding: 10px 0;
 }
