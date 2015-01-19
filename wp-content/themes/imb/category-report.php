@@ -11,25 +11,48 @@ Template Name: Category report archive
 
 <div class="archive-links">
 	<ul>
-	<?php
+		<?php
 
-	$year = $post->post_name;
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		$year = $post->post_name;
 
-	$args = array( 'posts_per_page' => 20, 'post_type' => 'report', 'report_year' => $year, 'order'=> 'ASC', 'orderby' => 'title' );
+		$args = array( 
+			'posts_per_page' => 20, 
+			'paged' => $paged,
+			'report_year' => $year, 
+			'order'=> 'ASC', 
+			'orderby' => 'title',
+			'post_type' => 'report' );
 
-	$myposts = get_posts( $args );
-	foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-		<li>
-			<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><span class="file-meta"> PDF, 0.12Mb</span></h4>
-		</li>
-	<?php endforeach; 
-	wp_reset_postdata();?>
+		    $postslist = new WP_Query( $args );
+
+		    if ( $postslist->have_posts() ) :
+		        while ( $postslist->have_posts() ) : $postslist->the_post(); 
+
+		             echo '<li><h4><a href="';
+		                 the_permalink(); 
+		             echo '">';
+		                 the_title();
+		             echo '</a> <span class="file-meta"> PDF, 0.12Mb</span></h4>
+				</li>';
+
+		         endwhile;  
+		?>
 
 	</ul>
 
-<div class="pagination">
-	<?php echo paginate_links( $args ); ?>
-
 </div>
 
+<div class="pagination">
+	<?php
+	$big = 999999999; // need an unlikely integer
+
+	echo paginate_links( array(
+		'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+		'format' => '?paged=%#%',
+		'current' => max( 1, get_query_var('paged') ),
+		'total' => $postslist->max_num_pages
+	) );
+	endif
+	?>
 </div>
