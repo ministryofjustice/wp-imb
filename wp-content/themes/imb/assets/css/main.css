@@ -6202,6 +6202,9 @@ img {
   width: 100%;
   height: auto;
 }
+figure {
+  width: 100%!important;
+}
 .page-header {
   margin-top: 0;
 }
