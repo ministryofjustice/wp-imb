@@ -76,7 +76,6 @@
 
 .container .about a {
 	color: @body-text-link;
-	text-decoration: none;
 
 		&:before {
 			content: "\25B8";
@@ -84,6 +83,7 @@
 			margin-right: .5em;
 			margin-bottom: 2px;
 		}
+
 }
 
 .quick-links ul li {
@@ -100,7 +100,13 @@
 		text-decoration: none;
 		display: block;
 		padding: 18px;	
-		font-size: 1.2em;	
+		font-size: 1.2em;
+
+
+			&:hover {
+				color: @dark-text-clr;
+				text-decoration: underline;
+			}
 	}
 }
 
@@ -111,6 +117,13 @@
 
 		&:last-child {
 			border-bottom: 0;
+		}
+
+		h3 {
+			a {
+				color: @dark-text-clr;
+			}
+
 		}
 }
 
@@ -128,13 +141,6 @@ li .news-details {
 			width: 100%;
 			overflow: hidden;
 			margin: 0 0 1em 0;
-
-			img {
-				max-width: 100%;
-
-
-		}
-
 		}
 }
 
@@ -144,8 +150,30 @@ li .news-details {
 }
 
 .news-img-wrapper {
-	float: right;
-	margin: 0 0 20px 20px;
+	margin:  0;
+	width: 100%;
+
+		img {
+			width: 100%;
+			height:auto;
+		}
+}
+
+.news-archive-links {
+
+	li {
+		overflow: hidden;
+	}
+
+	.news-img-wrapper {
+		margin:  0 2em 0 0;
+		width: 33.3333%;
+		height: 132px;
+		float: left;
+		display: inline-block;
+		background: #efefef;
+	}
+
 }
 
 .links ul li {

@@ -62,7 +62,7 @@
 						?>
 							<li>
 								<div class="news-details">
-									<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
 										<div class="news-meta">
 											<?php the_author_posts_link(); ?> <time class="published" datetime="<?php echo get_the_time( 'c' ); ?>"><?php echo get_the_date(); ?></time>
@@ -83,7 +83,7 @@
 					?>
 
 				</ul>
-			<a href="#" class= "float-right em-link">More news ></a>
+			<a href="/imb//news/" class= "float-right em-link">More news ></a>
 			</div>
 
 			<div class="media main-item video-container">
