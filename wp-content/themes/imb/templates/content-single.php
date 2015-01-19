@@ -8,8 +8,6 @@
         <div class="col-sm-4 min-col">
             <?php if ( has_post_thumbnail() ) : ?>
             <div class="news-img-wrapper">
-
-            <!--      <?php the_post_thumbnail('large'); ?>-->
             <?php the_post_thumbnail('large');
             echo '<span class="img-caption">' . get_post(get_post_thumbnail_id())->post_content . '</span>'; ?>
             
