@@ -37,6 +37,7 @@ Template Name: Category report archive
 				</li>';
 
 		         endwhile;  
+		         	endif;
 		?>
 
 	</ul>
@@ -53,6 +54,6 @@ Template Name: Category report archive
 		'current' => max( 1, get_query_var('paged') ),
 		'total' => $postslist->max_num_pages
 	) );
-	endif
+
 	?>
 </div>
