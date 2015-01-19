@@ -17,6 +17,12 @@ $meta_boxes = array(
 				'desc' => 'Main title on homepage, underneath banner'
 			),
 			array(
+				'id' => 'welcome-text',
+				'label' => 'Welcome text',
+				'type' => 'textarea-simple',
+				'desc' => 'Intro text on homepage, underneath main title'
+			),
+			array(
 				'id' => 'banner-tab',
 				'label' => 'Banner',
 				'type' => 'tab'
@@ -32,6 +38,12 @@ $meta_boxes = array(
 				'label' => 'Banner sub-heading',
 				'type' => 'text',
 				'desc' => 'Sub-heading in banner area'
+			),
+			array(
+				'id' => 'banner-link',
+				'label' => 'Banner link',
+				'type' => 'text',
+				'desc' => 'The destination for the link in the banner'
 			),
 			array(
 				'id' => 'quick-links-tab',

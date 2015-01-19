@@ -6,7 +6,7 @@
 		  		<div class="news-banner-text">
 		  			<h2><?php echo get_post_meta( 5, "banner_heading", true ); ?></h2>
 		  			<p><?php echo get_post_meta( 5, "banner-sub-heading", true ); ?></p>
-		  			<a href="#" class= "float-right">Read more ></a>
+		  			<a href="<?php echo get_post_meta( 5, "banner-link", true ); ?>" class= "float-right">Read more ></a>
 		  		</div>
 	  	</div>
 
@@ -42,7 +42,7 @@
   		<div class="col-sm-9 max-col">
 			<div class="intro main-item">
 				<h2><?php echo get_post_meta( 5, "welcome-title", true ); ?></h2>
-				<?php the_excerpt(); ?>
+				<p><?php echo get_post_meta( 5, "welcome-text", true ); ?></p>
 				<a href="#" class="float-right em-link">Learn more ></a>
 			</div>
 
