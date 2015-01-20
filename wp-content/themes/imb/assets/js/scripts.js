@@ -2156,3 +2156,10 @@ var UTIL = {
 $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+
+//Add class to last menu item for old IE
+
+$(document).ready(function (){
+  $('.navbar-default .navbar-nav li:last-child a').addClass('last-child');
+
+});

@@ -109,3 +109,7 @@ text-align: left;
 display: inline-block;
 margin-bottom: 4px;
 }
+
+.navbar-default .navbar-nav li a.last-child {
+background: #e1eaf1;
+}
