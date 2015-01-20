@@ -3,7 +3,7 @@
   <div class="input-group">
     <input type="search" value="<?php echo get_search_query(); ?>" name="s" class="search-field form-control" placeholder="<?php _e('Search the site', 'roots'); ?>">
     <span class="input-group-btn">
-      <button type="submit" class="search-submit btn btn-default"><?php _e('', 'roots'); ?><img src="wp-content/themes/imb/assets/img/search-icon.png"></button>
+      <button type="submit" class="search-submit btn btn-default"><?php _e('', 'roots'); ?><img src="../wp-content/themes/imb/assets/img/search-icon.png"></button>
     </span>
   </div>
 </form>
