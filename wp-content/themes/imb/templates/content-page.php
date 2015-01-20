@@ -2,9 +2,7 @@
 
 	<div class="col-sm-4">
 
-		<?php the_post_thumbnail('large');
-        	echo '<span class="img-caption">' . get_post(get_post_thumbnail_id())->post_content . '</span>'; 
-        ?>
+		<?php the_post_thumbnail('large'); ?>
 
 	</div>
 
