@@ -6420,7 +6420,7 @@ figure.alignnone {
 @media only screen and (min-width: 768px) {
   .navbar-default .navbar-nav li a,
   .navbar-default .navbar-nav > .open > a {
-    background: #e1eaf1 url("/imb/wp-content/themes/imb/assets/img/nav-divider.gif") no-repeat 100% 50%;
+    background: #e1eaf1 url("../img/nav-divider.gif") no-repeat 100% 50%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -6551,7 +6551,7 @@ figure.alignnone {
   display: block;
   margin-bottom: 2em;
   height: 153px;
-  background-image: url("/imb/wp-content/themes/imb/assets/img/news-banner.jpg");
+  background-image: url("../img/news-banner.jpg");
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
