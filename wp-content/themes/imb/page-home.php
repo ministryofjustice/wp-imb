@@ -25,7 +25,7 @@
   				<h3><?php echo get_post_meta( $post->ID, "sidebar-text-title", true ); ?></h3>
   				<p><?php echo get_post_meta( $post->ID, "sidebar-text-p1", true ); ?></p>
   				<p><?php echo get_post_meta( $post->ID, "sidebar-text-p2", true ); ?></p>
-  				<a href="#" class="about-home">Read more about us</a>
+  				<a href="<?php echo get_permalink( get_post_meta( $post->ID, "sidebar-link", true )); ?>" class="about-home">Read more about us</a>
   			</div>
 
    			<div class="links side-item">

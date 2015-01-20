@@ -122,6 +122,12 @@ $meta_boxes = array(
 				'desc' => 'Second paragraph of sidebar body text'
 			),
 			array(
+				'id' => 'sidebar-link',
+				'label' => 'Sidebar link',
+				'type' => 'page-select',
+				'desc' => 'Link under sidebar text'
+			),
+			array(
 				'id' => 'related-links',
 				'label' => 'Related links',
 				'type' => 'tab'
