@@ -2,7 +2,7 @@
   <div class="container">
 
 <div id="branding">
-<a href="/imb/"><img alt="IMB Logo" src="/imb/wp-content/themes/imb/assets/img/imb-logo.jpg"/></a>
+<a href="/imb/"><img alt="IMB Logo" src="<?php bloginfo('template_directory'); ?>/assets/img/imb-logo.jpg"/></a>
 </div>
 
 <div id="search">
