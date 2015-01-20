@@ -20,6 +20,7 @@ wp-content/cache/supercache/*
 wp-content/plugins/akismet/*
 wp-content/plugins/hello.pho
 wp-content/languages/*
+wp-content/plugins/*
 
 # wpengine specific
 .smushit-status

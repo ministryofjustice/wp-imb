@@ -6289,6 +6289,20 @@ ul a {
 .post h1 {
   margin-bottom: 1em;
 }
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .gallery-row {
   padding: 10px 0;
 }
@@ -6539,7 +6553,7 @@ figure.alignnone {
 .content-info #footer-links {
   display: inline-block;
   width: auto;
-  margin: 9em auto 1em auto;
+  margin: 9em auto 2.5em auto;
 }
 .content-info #footer-links a {
   color: #000000;
@@ -6680,6 +6694,10 @@ li .news-details .home-news-img-wrapper {
 }
 .links ul li {
   margin-bottom: .2em;
+}
+.video-container {
+  display: block;
+  margin-top: 0;
 }
 .archive-links {
   -webkit-columns: 2 220px;

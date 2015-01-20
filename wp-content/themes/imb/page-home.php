@@ -42,13 +42,13 @@
 			<div class="intro main-item">
 				<h2><?php echo get_post_meta( $post->ID, "welcome-title", true ); ?></h2>
 				<p><?php echo get_post_meta( $post->ID, "welcome-text", true ); ?></p>
+
 				<a href="#" class="float-right em-link">Learn more ></a>
 			</div>
 
 			<div class="news main-item">
 				<h2>Latest news</h2>
-
-				<ul>
+<ul>
 						<?php
 					// Get meta value containing array of entries
 					$latest_news_args = array(
@@ -61,6 +61,7 @@
 						?>
 							<li>
 								<div class="news-details">
+
 									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
 										<div class="news-meta">
@@ -74,21 +75,27 @@
 										<?php endif; ?>
 								
 										<?php the_excerpt(); ?>
+
 							
 							</div>
 							</li>
+
 						<?php
 					endwhile;
 					?>
 
 				</ul>
-			<a href="/imb//news/" class= "float-right em-link">More news ></a>
+				
+			<a href="/imb/news/" class= "float-right em-link">More news ></a>
+
+			</div>
+			<div class="media main-item video-container">
+				<h2>Latest media</h2>
+					<div class="videoWrapper">
+					 	<iframe width="640" height="360" src="//www.youtube.com/embed/VZla8-O_qH8" frameborder="0" allowfullscreen></iframe> 
+					 </div>
 			</div>
 
-			<div class="media main-item video-container">
-			<h2>Latest media</h2>
-				<iframe width="640" height="360" src="//www.youtube.com/embed/VZla8-O_qH8" frameborder="0" allowfullscreen></iframe>
-			</div>
   		</div>
 	</div>
 </div>

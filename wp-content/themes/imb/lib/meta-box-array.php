@@ -173,6 +173,17 @@ $meta_boxes = array(
 				'label' => 'Related link 4 URL',
 				'type' => 'text',
 				'desc' => 'The destination for the fourth related link'
+			),
+			array(
+				'id' => 'home-video-tab',
+				'label' => 'Homepage video',
+				'type' => 'tab'
+			),
+			array(
+				'id' => 'home-video',
+				'label' => 'Homepage video',
+				'type' => 'text',
+				'desc' => 'The URL for the youtube video on the homepage'
 			)
 		)
 	), 
