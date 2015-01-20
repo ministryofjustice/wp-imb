@@ -16,7 +16,7 @@
 
         <?php $fname = get_post_meta(get_the_ID(),'report-upload',true);  ?>
 
-        <a class="em-link" href="<?php echo $fname; ?>">View/download report (PDF, 0.12Mb)</a>
+        <a class="em-link float-right" href="<?php echo $fname; ?>">View/download report (PDF, 0.12Mb)</a>
 
         <!--Attachment ID and filesize need to be made dynamic -->
 
