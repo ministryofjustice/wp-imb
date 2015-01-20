@@ -14,9 +14,11 @@
 
         <?php the_excerpt(); ?>
 
-        <a class="em-link" href="<?php echo wp_get_attachment_url( 68 ); ?>">View/download report (PDF, 0.12Mb)</a>
+        <?php $fname = get_post_meta(get_the_ID(),'report-upload',true);  ?>
 
-        <!--Attachemnt ID and filesize need to be made dynamic -->
+        <a class="em-link" href="<?php echo $fname; ?>">View/download report (PDF, 0.12Mb)</a>
+
+        <!--Attachment ID and filesize need to be made dynamic -->
 
     </div>
     <footer>
