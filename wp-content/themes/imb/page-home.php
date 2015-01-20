@@ -4,45 +4,44 @@
 	
 	  	<div id="news-banner" class="container-fluid">
 		  		<div class="news-banner-text">
-		  			<h2><?php echo get_post_meta( 5, "banner_heading", true ); ?></h2>
-		  			<p><?php echo get_post_meta( 5, "banner-sub-heading", true ); ?></p>
-		  			<a href="<?php echo get_post_meta( 5, "banner-link", true ); ?>" class= "float-right">Read more ></a>
+		  			<h2><?php echo get_post_meta( $post->ID, "banner_heading", true ); ?></h2>
+		  			<p><?php echo get_post_meta( $post->ID, "banner-sub-heading", true ); ?></p>
+		  			<a href="<?php echo get_post_meta( $post->ID, "banner-link", true ); ?>" class= "float-right">Read more ></a>
 		  		</div>
 	  	</div>
-
 
   	<div class="row">
   		<div class="col-sm-3 min-col">
   			<div class="quick-links side-item">
   				<ul>
-  					<li><a href="<?php echo get_permalink( get_post_meta( 5, "quick-link-1-page", true )); ?>"><?php echo get_post_meta( 5, "quick-link-1", true ); ?> ></a></li>
-  					<li><a href="<?php echo get_permalink( get_post_meta( 5, "quick-link-2-page", true )); ?>"><?php echo get_post_meta( 5, "quick-link-2", true ); ?> ></a></li>
-  					<li><a href="<?php echo get_permalink( get_post_meta( 5, "quick-link-3-page", true )); ?>"><?php echo get_post_meta( 5, "quick-link-3", true ); ?> ></a></li>
-  					<li><a href="<?php echo get_permalink( get_post_meta( 5, "quick-link-4-page", true )); ?>"><?php echo get_post_meta( 5, "quick-link-4", true ); ?> ></a></li>
+  					<li><a href="<?php echo get_permalink( get_post_meta( $post->ID, "quick-link-1-page", true )); ?>"><?php echo get_post_meta( $post->ID, "quick-link-1", true ); ?> ></a></li>
+  					<li><a href="<?php echo get_permalink( get_post_meta( $post->ID, "quick-link-2-page", true )); ?>"><?php echo get_post_meta( $post->ID, "quick-link-2", true ); ?> ></a></li>
+  					<li><a href="<?php echo get_permalink( get_post_meta( $post->ID, "quick-link-3-page", true )); ?>"><?php echo get_post_meta( $post->ID, "quick-link-3", true ); ?> ></a></li>
+  					<li><a href="<?php echo get_permalink( get_post_meta( $post->ID, "quick-link-4-page", true )); ?>"><?php echo get_post_meta( $post->ID, "quick-link-4", true ); ?> ></a></li>
   				</ul>
   			</div>
 
   			<div class="about side-item">
-  				<h3><?php echo get_post_meta( 5, "sidebar-text-title", true ); ?></h3>
-  				<p><?php echo get_post_meta( 5, "sidebar-text-p1", true ); ?></p>
-  				<p><?php echo get_post_meta( 5, "sidebar-text-p2", true ); ?></p>
+  				<h3><?php echo get_post_meta( $post->ID, "sidebar-text-title", true ); ?></h3>
+  				<p><?php echo get_post_meta( $post->ID, "sidebar-text-p1", true ); ?></p>
+  				<p><?php echo get_post_meta( $post->ID, "sidebar-text-p2", true ); ?></p>
   				<a href="#" class="about-home">Read more about us</a>
   			</div>
 
    			<div class="links side-item">
   				<h3>Related links</h3>
   				<ul>
-  					<li><a href="<?php echo get_post_meta( 5, "related-link-1", true ); ?>"><?php echo get_post_meta( 5, "related-1", true ); ?></a></li>
-  					<li><a href="<?php echo get_post_meta( 5, "related-link-2", true ); ?>"><?php echo get_post_meta( 5, "related-2", true ); ?></a></li>
-  					<li><a href="<?php echo get_post_meta( 5, "related-link-3", true ); ?>"><?php echo get_post_meta( 5, "related-3", true ); ?></a></li>
-  					<li><a href="<?php echo get_post_meta( 5, "related-link-4", true ); ?>"><?php echo get_post_meta( 5, "related-4", true ); ?></a></li>
+  					<li><a href="<?php echo get_post_meta( $post->ID, "related-link-1", true ); ?>"><?php echo get_post_meta( $post->ID, "related-1", true ); ?></a></li>
+  					<li><a href="<?php echo get_post_meta( $post->ID, "related-link-2", true ); ?>"><?php echo get_post_meta( $post->ID, "related-2", true ); ?></a></li>
+  					<li><a href="<?php echo get_post_meta( $post->ID, "related-link-3", true ); ?>"><?php echo get_post_meta( $post->ID, "related-3", true ); ?></a></li>
+  					<li><a href="<?php echo get_post_meta( $post->ID, "related-link-4", true ); ?>"><?php echo get_post_meta( $post->ID, "related-4", true ); ?></a></li>
   				</ul>
   			</div>
   		</div>
   		<div class="col-sm-9 max-col">
 			<div class="intro main-item">
-				<h2><?php echo get_post_meta( 5, "welcome-title", true ); ?></h2>
-				<p><?php echo get_post_meta( 5, "welcome-text", true ); ?></p>
+				<h2><?php echo get_post_meta( $post->ID, "welcome-title", true ); ?></h2>
+				<p><?php echo get_post_meta( $post->ID, "welcome-text", true ); ?></p>
 				<a href="#" class="float-right em-link">Learn more ></a>
 			</div>
 
