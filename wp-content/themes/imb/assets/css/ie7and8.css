@@ -114,3 +114,7 @@ margin-bottom: 4px;
 .navbar-default .navbar-nav li a.last-child {
 background: #e1eaf1!important;
 }
+
+.news ul li.last-child {
+border-bottom: 0;
+}
