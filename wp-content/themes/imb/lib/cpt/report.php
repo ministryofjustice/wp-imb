@@ -4,7 +4,7 @@ function report_post_init() {
     $args = array(
       'public' => true,
       'label'  => 'Reports',
-      'supports'      => array( 'title', 'excerpt', 'thumbnail' ),
+      'supports'      => array( 'title', 'editor', 'thumbnail' ),
       'has_archive'   => true
     );
     register_post_type( 'report', $args );
