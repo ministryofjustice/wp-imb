@@ -9,17 +9,30 @@
         
             <?php if ( has_post_thumbnail() ) : ?>
             <div class="news-img-wrapper">
-            <?php the_post_thumbnail('large');
-            echo '<span class="img-caption">' . get_post(get_post_thumbnail_id())->post_content . '</span>'; ?>
+
+              <?php the_post_thumbnail('large');
+              echo '<span class="img-caption">' . get_post(get_post_thumbnail_id())->post_content . '</span>'; ?>
             
             </div>
             <?php endif; ?>
-<?php get_template_part('templates/entry-meta'); ?>
+
+            <div class="post-meta">
+                <?php get_template_part('templates/entry-meta'); ?>
+            </div>
+
           </div>
+
+
           <div class="col-sm-8 mac-col">
             <?php the_content(); ?>
           </div>
+
+          <div class="prev-next">
+              <?php previous_post_link('%link', '< Previous story', TRUE); ?> | <?php next_post_link('%link', 'Next story >', TRUE); ?> 
+          </div>
           
+
+
     <footer>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
     </footer>
