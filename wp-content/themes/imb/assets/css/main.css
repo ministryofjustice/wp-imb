@@ -6674,7 +6674,7 @@ li .news-details .home-news-img-wrapper {
   font-size: .95em;
 }
 .news-img-wrapper {
-  margin: 0;
+  margin: 0 0 1em 0;
   width: 100%;
 }
 .news-img-wrapper img {
