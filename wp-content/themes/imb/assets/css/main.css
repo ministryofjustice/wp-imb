@@ -6275,7 +6275,7 @@ ul a {
   }
 }
 .img-caption {
-  font-size: .85em;
+  font-size: 0.85em;
   margin: .5em 0;
   display: inline-block;
 }
@@ -6310,6 +6310,9 @@ ul a {
   display: inline-block;
   width: 100%;
 }
+.report .post-meta {
+  border-bottom: 0;
+}
 .post-meta {
   border-bottom: 1px solid #c5c5c5;
   margin-bottom: 1em;
@@ -6319,6 +6322,29 @@ ul a {
     border-bottom: 0;
     margin-bottom: 0;
   }
+}
+.download-report {
+  border-top: 0;
+  margin-top: 1em;
+  border-bottom: 1px solid #c5c5c5;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .download-report {
+    border-top: 0;
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+.wp-caption {
+  border: 0;
+  padding: 0;
+  margin-top: .5em;
+}
+.wp-caption .wp-caption-text {
+  font-size: 0.85em;
+  padding: .5em 0 1em 0;
 }
 .gallery-row {
   padding: 10px 0;

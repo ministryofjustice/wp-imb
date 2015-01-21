@@ -2,7 +2,7 @@
 
 body {
 	font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-size: @main-body-text-size;
 }
 
 a {
@@ -73,7 +73,7 @@ figure {
 }
 
 .em-link {
-	font-size: 1.4em;
+	font-size: @larger-link-size;
 	color: @dark-text-clr;
 	text-decoration: none;
 	margin-top: .5em;
@@ -109,7 +109,7 @@ figure {
 
 
 .img-caption {
-	font-size: .85em;
+	font-size: @caption-text-size;
 	margin: .5em 0;display: inline-block;
 }
 
@@ -149,12 +149,40 @@ figure {
 	width: 100%;
 }
 
+.report .post-meta {
+	border-bottom: 0;
+}
 .post-meta {
 	border-bottom: 1px solid @thin-divider-clr;
 	margin-bottom: 1em;
-	
+
 		@media (min-width: @screen-sm) {
 			border-bottom: 0;
 			margin-bottom: 0;
 		}
+}
+
+.download-report {
+	border-top: 0;
+	margin-top: 1em;
+	border-bottom: 1px solid @thin-divider-clr;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+
+		@media (min-width: @screen-sm) {
+			border-top: 0;
+			border-bottom: 0;
+			margin-bottom: 0;
+		}
+}
+
+.wp-caption {
+	border: 0;
+	padding: 0;
+	margin-top: .5em;
+
+	.wp-caption-text {
+		font-size: @caption-text-size;
+		padding: .5em 0 1em 0;
+	}
 }
