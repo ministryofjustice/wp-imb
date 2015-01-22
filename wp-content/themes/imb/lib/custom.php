@@ -13,12 +13,12 @@ foreach ( $cpt_declarations as $cpt_declaration ) {
 }
 
 // /* Get attachment ID from URL */
-// function get_attachment_id_from_src( $image_src ) {
-// 	global $wpdb;
-// 	$query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$image_src'";
-// 	$id = $wpdb->get_var( $query );
-// 	return $id;
-// }
+function get_attachment_id_from_src( $image_src ) {
+	global $wpdb;
+	$query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$image_src'";
+	$id = $wpdb->get_var( $query );
+	return $id;
+}
 
 /**
  * Meta Boxes

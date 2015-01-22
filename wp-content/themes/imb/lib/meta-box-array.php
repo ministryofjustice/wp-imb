@@ -207,7 +207,13 @@ array(
 				'label' => 'PDF upload',
 				'type' => 'upload',
 				'desc' => 'Uplod PDF version of report'
-			)
+			),
+			array(
+				'id' => 'prison-link',
+				'label' => 'Prison Finder link',
+				'type' => 'text',
+				'desc' => 'Link to the relevant Prison Finder page'
+			),
 		)
 	) 
 );

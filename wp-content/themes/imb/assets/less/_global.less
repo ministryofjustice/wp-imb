@@ -163,16 +163,17 @@ figure {
 }
 
 .download-report {
-	border-top: 0;
-	margin-top: 1em;
-	border-bottom: 1px solid @thin-divider-clr;
-	margin-bottom: 1em;
-	padding-bottom: 1em;
+	margin: 1em 0 1.5em 0;
+	padding: 12px 15px 15px 5em;
+	background: #dee0e2 url('../img/report-icon.png') 15px 13px no-repeat;
+	width: 100%;
+
+		a {
+
+		}
 
 		@media (min-width: @screen-sm) {
-			border-top: 0;
-			border-bottom: 0;
-			margin-bottom: 0;
+			width: 60%;
 		}
 }
 
@@ -185,4 +186,9 @@ figure {
 		font-size: @caption-text-size;
 		padding: .5em 0 1em 0;
 	}
+}
+
+.file-size {
+	display: block;
+	margin: .5em 0;
 }

@@ -12,32 +12,6 @@
         <div class="post-meta">
           <time class="published" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time>
         </div>
-
-        <div class="download-report">
-        
-          <?php $fname = get_post_meta(get_the_ID(),'report-upload',true);  ?>
-
-          <a class="" href="<?php echo $fname; ?>">View/download report (PDF, 
-                <?php 
-
-                   //global $post;
-
-                   $post_id = get_the_ID();
-
-                  $myfile = filesize( get_attached_file( 68 ) ); 
-
-                  $docsize = size_format($myfile);
-
-                  echo $docsize;
-
-                  //echo $post_id;
-                  
-                  ?>
-              )
-          </a>
-            <!--Filesize need to be made dynamic -->
-       </div>
-
     </div>
 
     <div class="col-sm-8">
@@ -45,6 +19,27 @@
       <div class="entry-content">
 
           <?php the_content(); ?>
+
+                  <div class="download-report">
+        
+          <?php $fname = get_post_meta(get_the_ID(),'report-upload',true);  ?>
+
+          <a class="" href="<?php echo $fname; ?>"><?php the_title(); ?></a> <span class="file-size">PDF, 
+                <?php 
+
+                  $attachment_id = get_attachment_id_from_src($fname);
+
+                  $myfile = filesize( get_attached_file( $attachment_id ) ); 
+
+                  $docsize = size_format($myfile);
+
+                  echo $docsize;
+                  
+                  ?>
+              </span>
+       </div>
+
+               <a href="<?php echo get_post_meta( $post->ID, "prison-link", true ); ?>">More about this prison &gt;</a>
 
       </div>
 
