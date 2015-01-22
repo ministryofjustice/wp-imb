@@ -6744,9 +6744,9 @@ li .news-details .home-news-img-wrapper {
   margin-top: 0;
 }
 .archive-links {
-  -webkit-columns: 2 220px;
-  -moz-columns: 2 220px;
-  columns: 2 220px;
+  -webkit-columns: 3 230px;
+  -moz-columns: 3 230px;
+  columns: 3 230px;
   -webkit-column-gap: 6em;
   -moz-column-gap: 6em;
   column-gap: 6em;
