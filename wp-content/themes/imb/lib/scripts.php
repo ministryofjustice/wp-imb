@@ -15,6 +15,9 @@
  * - You're not logged in as an administrator
  */
 function roots_scripts() {
+
+
+
   /**
    * The build task in Grunt renames production assets with a hash
    * Read the asset names from assets-manifest.json
@@ -38,6 +41,11 @@ function roots_scripts() {
   }
 
   wp_enqueue_style('roots_css', get_template_directory_uri() . $assets['css'], false, null);
+
+  global $wp_styles;
+
+  wp_enqueue_style( 'ie7and8', get_template_directory_uri() . '/assets/css/ie7and8.css', array('roots_css') );
+  $wp_styles->add_data( 'ie7and8', 'conditional', 'lt IE 9' );
 
   /**
    * jQuery is loaded using the same method from HTML5 Boilerplate:
