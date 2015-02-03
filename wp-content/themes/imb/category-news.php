@@ -32,11 +32,11 @@ Template Name: Category news archive
 
 				 echo '<li>';
 		         echo'<div class="img-time-wrapper">';
-		         if ( has_post_thumbnail() ) : the_post_thumbnail('large'); 
-		         endif;
-		         echo '<time class="published">'; 
+				 echo '<time class="published">'; 
 		         echo get_the_date();
 		         echo '</time>';
+		         if ( has_post_thumbnail() ) : the_post_thumbnail('large'); 
+		         endif;  
 		         echo '</div>';
 		         echo '<div class="title-excerpt-wrapper">';
 		         echo '<h4><a href="';
