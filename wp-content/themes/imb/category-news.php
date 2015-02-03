@@ -30,20 +30,22 @@ Template Name: Category news archive
 		    if ( $postslist->have_posts() ) :
 		        while ( $postslist->have_posts() ) : $postslist->the_post(); 
 
-		             echo '<li><h4><a href="';
-		             the_permalink();
-		             echo '">';
-		             the_title();
-		             echo '</a></h4>';
-		             echo'<time class="published">'; 
-		             get_the_date();
-		             echo '</time>';
-		             echo '<div class="news-img-wrapper">';
-		             if ( has_post_thumbnail() ) : the_post_thumbnail('large'); 
-		             endif;
-		             echo '</div>';
-		             the_excerpt();
-		             echo '</li><hr/>';
+				 echo '<li>';
+		         echo'<div class="img-time-wrapper">';
+		         if ( has_post_thumbnail() ) : the_post_thumbnail('large'); 
+		         endif;
+		         echo '<time class="published">'; 
+		         echo get_the_date();
+		         echo '</time>';
+		         echo '</div>';
+		         echo '<div class="title-excerpt-wrapper">';
+		         echo '<h4><a href="';
+		         the_permalink();
+		         echo '">';
+		         the_title();
+		         echo '</a></h4>';
+		         the_excerpt();
+		         echo '</div></li><hr/>';
 		             
 
 		         endwhile;  

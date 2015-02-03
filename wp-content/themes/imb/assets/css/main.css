@@ -6347,6 +6347,23 @@ ul a {
   display: block;
   margin: .5em 0;
 }
+.img-time-wrapper {
+  padding: 0 2em 0 0;
+  width: 33.3333%;
+  float: left;
+  display: inline-block;
+}
+.img-time-wrapper img {
+  margin-bottom: 1em;
+}
+.title-excerpt-wrapper {
+  width: 66.6666%;
+  float: left;
+  display: inline-block;
+}
+.title-excerpt-wrapper h4 {
+  margin-top: 0;
+}
 .gallery-row {
   padding: 10px 0;
 }
