@@ -6202,8 +6202,20 @@ img {
   width: 100%;
   height: auto;
 }
+.wp-caption a > img.inline {
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
 figure {
   width: 100%!important;
+}
+.main .row .col-sm-8 ul {
+  margin-left: 24px;
+}
+.main .row .col-sm-8 ul li {
+  list-style: disc;
+  margin-bottom: 4px;
 }
 .page-header {
   margin-top: 0;

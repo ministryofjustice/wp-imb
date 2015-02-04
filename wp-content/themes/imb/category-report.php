@@ -28,13 +28,14 @@ Template Name: Category report archive
 
 		    if ( $postslist->have_posts() ) :
 		        while ( $postslist->have_posts() ) : $postslist->the_post(); 
-
+		    		if(get_post_meta(get_the_ID(),'report-upload',true)):
 		             echo '<li><h4><a href="';
-		                 the_permalink(); 
+		                 /*the_permalink();*/ echo get_post_meta(get_the_ID(),'report-upload',true);
 		             echo '">';
 		                 the_title();
 		             echo '</a> <span class="file-meta"> PDF, 0.12Mb</span></h4>
 				</li>';
+				endif;
 
 		         endwhile;  
 		         	endif;
