@@ -65,7 +65,7 @@
 									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
 										<div class="news-meta">
-											<?php the_author_posts_link(); ?> <time class="published" datetime="<?php echo get_the_time( 'c' ); ?>"><?php echo get_the_date(); ?></time>
+											 <time class="published" datetime="<?php echo get_the_time( 'c' ); ?>"><?php echo get_the_date(); ?></time>
 										</div>
 
 										<?php if ( has_post_thumbnail() ) : ?>
