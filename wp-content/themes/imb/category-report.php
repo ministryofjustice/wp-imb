@@ -17,7 +17,7 @@ Template Name: Category report archive
 		$year = $post->post_name;
 
 		$args = array( 
-			'posts_per_page' => 20, 
+			'posts_per_page' => 45, 
 			'paged' => $paged,
 			'report_year' => $year, 
 			'order'=> 'ASC', 
@@ -33,8 +33,9 @@ Template Name: Category report archive
 		                 /*the_permalink();*/ echo get_post_meta(get_the_ID(),'report-upload',true);
 		             echo '">';
 		                 the_title();
-		             echo '</a> <span class="file-meta"> PDF, 0.12Mb</span></h4>
-				</li>';
+		             echo '</a> <span class="file-meta"> PDF, 0.12Mb</span></h4>';
+		             // echo '<h4><span class="file-meta">Area: Immigration Detention Estate</span></h4>';
+					 echo '</li>';
 				endif;
 
 		         endwhile;  

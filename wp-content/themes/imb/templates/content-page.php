@@ -9,13 +9,26 @@ the_post_thumbnail('large');
   echo '<div class="img-caption">' . get_post(get_post_thumbnail_id())->post_excerpt . '</div>';
   }
 ?>
+		<?php
 
+			if ( is_page( 16 )) { 
+
+				wpb_list_child_pages(); 
+
+				}
+			else {
+
+			}
+		
+		?>
+
+	
+		
 	</div>
 
 	<div class="col-sm-8">
 
 		<?php the_content(); ?>
-
 
 	</div>
 </div>

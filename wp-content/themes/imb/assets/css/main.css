@@ -6217,6 +6217,14 @@ figure {
   list-style: disc;
   margin-bottom: 4px;
 }
+ul.report-list {
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+ul.report-list li {
+  list-style: none;
+  margin-bottom: 4px;
+}
 .page-header {
   margin-top: 0;
 }
