@@ -159,6 +159,14 @@ li .news-details {
 		}
 }
 
+.page-img-wrapper {
+	height: 300px;
+	overflow: hidden;
+		@media (min-width: @screen-sm) {
+		height: auto;
+	}
+}
+
 .news-archive-links {
 
 	li {
@@ -211,6 +219,22 @@ li .news-details {
        			}
           }
 	}
+}
+
+/* FAQs */
+
+.panel-default > .panel-heading {
+color: @dark-text-clr;
+background-color: lighten(@brand-primary, 6%);
+border-color: @brand-secondary;
+border-radius: 0;
+}
+
+.panel-group .panel {
+margin-bottom: 12px;
+border-radius: 0;
+box-shadow: none;
+-webkit-box-shadow: none;
 }
 
 

@@ -6762,6 +6762,15 @@ li .news-details .home-news-img-wrapper {
   width: 100%;
   height: auto;
 }
+.page-img-wrapper {
+  height: 300px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .page-img-wrapper {
+    height: auto;
+  }
+}
 .news-archive-links li {
   overflow: hidden;
 }
@@ -6803,5 +6812,18 @@ li .news-details .home-news-img-wrapper {
 .archive-links li h4 .file-meta {
   font-size: .75em;
   color: #aaaaaa;
+}
+/* FAQs */
+.panel-default > .panel-heading {
+  color: #000000;
+  background-color: #f6f9fb;
+  border-color: #6894bb;
+  border-radius: 0;
+}
+.panel-group .panel {
+  margin-bottom: 12px;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 /*# sourceMappingURL=main.css.map */
