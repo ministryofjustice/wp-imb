@@ -46,6 +46,12 @@ $meta_boxes = array(
 				'desc' => 'The destination for the link in the banner'
 			),
 			array(
+				'id' => 'banner-image',
+				'label' => 'Banner image - 940px x 306px',
+				'type' => 'upload',
+				'desc' => 'The background image for the banner. Must be 940px x 306px.'
+			),
+			array(
 				'id' => 'quick-links-tab',
 				'label' => 'Quick links',
 				'type' => 'tab'
