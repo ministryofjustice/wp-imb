@@ -21,6 +21,10 @@
 
 /* - - - - - - Navigation - - - - - - */
 
+.nav:before, .nav:after {
+  display: none;
+}
+
 .navbar {
 	margin-bottom: .5em;
 }
@@ -43,21 +47,21 @@
   border-top: 0;
 
  		ul#menu-primary-navigation {
- 			display:inline-block;
+ 			display:table;
  			width: 100%;
  			margin: 0;
  			padding: 0;			
  	}
 
  		@media only screen and (min-width:768px) {
- 			background: @navbar-default-link-bg;
+
  		}
 
  }
 
    .navbar-default .navbar-nav li {
    		text-align: center;
-   		width: 49.3%;
+   		width: 49%;
    		float: left;
    		margin-bottom: 4px;
       position: relative;
@@ -72,9 +76,10 @@
 
 
  		@media only screen and (min-width:768px) {
- 			width: 14.285714286%;
-      max-width: calc(100% / 7);
- 			margin-bottom: 0;
+      width: auto;
+      margin-bottom: 0;
+      display: table-cell;
+      float: none;
 
  			   	&:nth-child(odd) {
    				margin-right: 0;
@@ -89,7 +94,7 @@
  	display: block;
  	font-weight: 500;
   font-size: .9em;
-  padding: .55em;
+  padding: .55em 0;
  	background-color: @navbar-default-link-bg;
 
  		&:hover { 
@@ -98,20 +103,22 @@
 
  		@media only screen and (min-width:768px) {
 
- 			background: @navbar-default-link-bg url("../img/nav-divider.gif") no-repeat 100% 50%;
+ 			background: @navbar-default-link-bg;
+      border-right: 2px solid @brand-secondary;
 
  		}
 
     @media only screen and (min-width:992px) {
         font-size: 1em;
+        padding: .515em 0;
     }
  }
 
   .navbar-default .navbar-nav li:last-child a{
-
- 		&:hover {
- 			background: @navbar-default-link-hover-bg;
- 		}
+      border-right: 0;
+     		&:hover {
+     			background: @navbar-default-link-hover-bg;
+     		}
  }
 
  .navbar-default .navbar-nav li:last-child a {
@@ -167,6 +174,7 @@
       height: 100%;
       font-size: .9em;
       white-space: normal;
+      border-right: 0;
 
             @media only screen and (min-width:768px) {
                 font-size: 1em;
@@ -175,9 +183,13 @@
 
     }
 
-    a:hover, a:active, a:focus {
+    .navbar-default .navbar-nav .dropdown ul.dropdown-menu li a:hover, 
+    .navbar-default .navbar-nav .dropdown ul.dropdown-menu li a:active, 
+    .dropdown ul.dropdown-menu li a:focus {
       background: lighten(@brand-primary, 6%) url(0)!important;
       color: @navbar-default-link-color;
+      border-right: 0;
+        
     }
   
 }
