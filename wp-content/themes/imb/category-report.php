@@ -17,7 +17,7 @@ Template Name: Category report archive
 		$year = $post->post_name;
 
 		$args = array( 
-			'posts_per_page' => 45, 
+			'posts_per_page' => 30, 
 			'paged' => $paged,
 			'report_year' => $year, 
 			'order'=> 'ASC', 
