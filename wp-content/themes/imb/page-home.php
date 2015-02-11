@@ -56,7 +56,7 @@ Template Name: Homepage
 				<h2><?php echo get_post_meta( $post->ID, "welcome-title", true ); ?></h2>
 				<p><?php echo get_post_meta( $post->ID, "welcome-text", true ); ?></p>
 
-				<a href="#" class="float-right em-link">Learn more ></a>
+				<a href="<?php echo get_permalink( get_post_meta( $post->ID, "welcome-link", true )); ?>" class="float-right em-link">Learn more ></a>
 			</div>
 
 			<div class="news main-item">

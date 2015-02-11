@@ -23,6 +23,12 @@ $meta_boxes = array(
 				'desc' => 'Intro text on homepage, underneath main title'
 			),
 			array(
+				'id' => 'welcome-link',
+				'label' => 'Learn more link destination',
+				'type' => 'page-select',
+				'desc' => 'Please select the destination page for Learn more link'
+			),
+			array(
 				'id' => 'banner-tab',
 				'label' => 'Banner',
 				'type' => 'tab'
