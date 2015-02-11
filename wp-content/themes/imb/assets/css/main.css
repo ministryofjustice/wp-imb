@@ -6835,4 +6835,19 @@ li .news-details .home-news-img-wrapper {
 img.ninja-forms-help-text {
   width: auto;
 }
+.ninja-forms-form-wrap label {
+  font-weight: normal!important;
+}
+.ninja-forms-required-items {
+  margin-bottom: 1em;
+  font-size: .9em;
+}
+input[type="submit"] {
+  background: #e1eaf1;
+  border: 1px solid #6894bb;
+  padding: 4px 8px;
+}
+input[type="submit"]:hover {
+  background: #f6f9fb;
+}
 /*# sourceMappingURL=main.css.map */
