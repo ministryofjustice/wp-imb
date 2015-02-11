@@ -6831,4 +6831,8 @@ li .news-details .home-news-img-wrapper {
   box-shadow: none;
   -webkit-box-shadow: none;
 }
+/* Contact Us */
+img.ninja-forms-help-text {
+  width: auto;
+}
 /*# sourceMappingURL=main.css.map */
