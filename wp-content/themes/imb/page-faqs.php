@@ -34,7 +34,8 @@ Template Name: FAQs page
 	  		<?php
 			    $args = array(
 			        'post_type' => 'faq',
-			        'order' => 'ASC'
+			        'order' => 'ASC',
+			        'posts_per_page' => 20
 			    );
 			    $the_query = new WP_Query( $args );
 			?>
