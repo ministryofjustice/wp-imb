@@ -3,20 +3,34 @@
 	display: inline-block;
 	min-height: 160px;
 	width: 100%; 
-	// position: absolute;
-	// bottom: 0;
 	margin-top: 1em;
+		.widget {
+			border-bottom: none;
+		}
 }
 
 .content-info #footer-links {
-	// position: absolute;
-	// bottom: 10px;
-	// left: 18px;
-	display: inline-block;
-	width: auto;
-	margin: 9em auto 2.5em auto;
-
-		a {
-			color: #000000;
-		}
+	margin: 9em 0 2.5em 0 ;
+	display: block;
+	overflow: hidden;
+	ul {
+		li {
+			border-right: 2px solid @dark-text-clr;
+			width: auto;
+			display: inline-block;
+	        zoom: 1;
+	        *display: inline;
+			margin-left: -2px;
+				&:last-child {
+					border-right: none;
+				}
+				a {
+					color: @dark-text-clr;
+					display: inline-block;
+					margin: 0px 8px 0px 5px;
+				}
+	}
 }
+}
+
+

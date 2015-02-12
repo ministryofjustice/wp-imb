@@ -6638,13 +6638,29 @@ figure.alignnone {
   width: 100%;
   margin-top: 1em;
 }
-.content-info #footer-links {
-  display: inline-block;
-  width: auto;
-  margin: 9em auto 2.5em auto;
+.content-info .widget {
+  border-bottom: none;
 }
-.content-info #footer-links a {
+.content-info #footer-links {
+  margin: 9em 0 2.5em 0 ;
+  display: block;
+  overflow: hidden;
+}
+.content-info #footer-links ul li {
+  border-right: 2px solid #000000;
+  width: auto;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  margin-left: -2px;
+}
+.content-info #footer-links ul li:last-child {
+  border-right: none;
+}
+.content-info #footer-links ul li a {
   color: #000000;
+  display: inline-block;
+  margin: 0px 8px 0px 5px;
 }
 #news-banner {
   display: block;

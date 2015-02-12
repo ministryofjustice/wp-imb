@@ -118,3 +118,9 @@ background: #e1eaf1!important;
 .news ul li.last-child {
 border-bottom: 0;
 }
+
+.content-info #footer-links ul li {
+	        zoom: 1;
+	        *display: inline;
+	        margin-left: 0;
+}
