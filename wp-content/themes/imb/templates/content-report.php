@@ -39,7 +39,7 @@
               </span>
        </div>
 
-               <a href="<?php echo get_post_meta( $post->ID, "prison-link", true ); ?>">More about this prison &gt;</a>
+              
 
       </div>
 
