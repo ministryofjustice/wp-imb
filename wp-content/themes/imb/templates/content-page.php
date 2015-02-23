@@ -11,7 +11,7 @@ the_post_thumbnail('large');
 ?>
 		<?php
 
-			if ( is_page( 16 )) { 
+			if (is_page(array(16,28 ))) { 
 
 				wpb_list_child_pages(); 
 

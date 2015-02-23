@@ -6217,11 +6217,11 @@ figure {
   list-style: disc;
   margin-bottom: 4px;
 }
-ul.report-list {
+ul.child-list {
   margin-left: 0;
   margin-bottom: 24px;
 }
-ul.report-list li {
+ul.child-list li {
   list-style: none;
   margin-bottom: 4px;
 }
