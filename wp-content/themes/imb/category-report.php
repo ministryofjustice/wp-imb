@@ -29,11 +29,25 @@ Template Name: Category report archive
 		    if ( $postslist->have_posts() ) :
 		        while ( $postslist->have_posts() ) : $postslist->the_post(); 
 		    		if(get_post_meta(get_the_ID(),'report-upload',true)):
+
+		    		$fname = get_post_meta(get_the_ID(),'report-upload',true);
+
 		             echo '<li><h4><a href="';
 		                 /*the_permalink();*/ echo get_post_meta(get_the_ID(),'report-upload',true);
 		             echo '">';
 		                 the_title();
-		             echo '</a> <span class="file-meta"> PDF, 0.12Mb</span></h4>';
+		             echo '</a> <span class="file-meta"> PDF, '; 
+
+	                  $attachment_id = get_attachment_id_from_src($fname);
+
+	                  $myfile = filesize( get_attached_file( $attachment_id ) ); 
+
+	                  $docsize = size_format($myfile);
+
+	                  echo $docsize;
+                  
+
+		             echo '</span></h4>';
 		             // echo '<h4><span class="file-meta">Area: Immigration Detention Estate</span></h4>';
 					 echo '</li>';
 				endif;
