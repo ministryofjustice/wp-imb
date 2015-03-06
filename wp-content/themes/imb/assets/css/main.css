@@ -6603,12 +6603,10 @@ figure.alignnone {
     font-size: 1em;
   }
 }
-.dropdown ul.dropdown-menu li .navbar-default .navbar-nav .dropdown ul.dropdown-menu li a:hover,
-.dropdown ul.dropdown-menu li .navbar-default .navbar-nav .dropdown ul.dropdown-menu li a:active,
-.dropdown ul.dropdown-menu li .dropdown ul.dropdown-menu li a:focus {
-  background: #f6f9fb;
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
   color: #000000;
-  border-right: 0;
 }
 /* - - - - - - Search - - - - - - */
 #search {
