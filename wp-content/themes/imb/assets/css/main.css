@@ -6777,6 +6777,7 @@ figure.alignnone {
 li .news-details {
   padding-bottom: 1em;
   margin-left: 2%;
+  overflow: hidden;
 }
 li .news-details h3 {
   font-size: 1.5em;
@@ -6787,7 +6788,7 @@ li .news-details .home-news-img-wrapper {
   width: 49%;
   padding: 0 .5em .5em .5em;
   overflow: hidden;
-  margin: 0 0 1em 1em;
+  margin: 0 0 0 1em;
   float: right;
 }
 .news-meta {
