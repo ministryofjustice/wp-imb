@@ -6379,7 +6379,7 @@ ul a {
   display: inline-block;
 }
 .img-time-wrapper img {
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .title-excerpt-wrapper {
   width: 66.6666%;
@@ -6777,16 +6777,19 @@ figure.alignnone {
 li .news-details {
   padding-bottom: 1em;
   margin-left: 2%;
+  overflow: hidden;
 }
 li .news-details h3 {
   font-size: 1.5em;
   color: #000000;
 }
 li .news-details .home-news-img-wrapper {
-  height: 420px;
-  width: 100%;
+  height: auto;
+  width: 49%;
+  padding: 0 .5em .5em .5em;
   overflow: hidden;
-  margin: 0 0 1em 0;
+  margin: 0 0 0 1em;
+  float: right;
 }
 .news-meta {
   margin: 1em 0;
