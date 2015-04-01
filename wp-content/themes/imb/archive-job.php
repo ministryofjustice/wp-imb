@@ -1,6 +1,7 @@
 <?php
-if(!empty(get_query_var( 'sort' ))){
-  if(get_query_var( 'sort' ) == 'date') {
+$sort = get_query_var( 'sort' );
+if(!empty($sort)){
+  if($sort == 'date') {
     $orderby = array(
       'order' => 'DESC',
       'orderby' => 'meta_value',
