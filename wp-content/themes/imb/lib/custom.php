@@ -6,6 +6,12 @@
 
 //Load CPTs
 
+function add_query_vars_filter($vars){
+  $vars[] = "sort";
+  return $vars;
+}
+add_filter('query_vars', 'add_query_vars_filter');
+
 $cpt_declarations = scandir( get_template_directory() . "/lib/cpt/" );
 foreach ( $cpt_declarations as $cpt_declaration ) {
 	if ( $cpt_declaration[0] != "." )
@@ -38,9 +44,9 @@ require_once (trailingslashit( get_template_directory() ) . 'option-tree/ot-load
 
 /* Display child pages on parent page  */
 
-function wpb_list_child_pages() { 
+function wpb_list_child_pages() {
 
-global $post; 
+global $post;
 
 $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
 
@@ -53,7 +59,7 @@ echo $string;
 
 }
 
-add_shortcode('wpb_childpages', 'wpb_list_child_pages'); 
+add_shortcode('wpb_childpages', 'wpb_list_child_pages');
 
 /**
  * Hide editor on homepage.
@@ -61,7 +67,7 @@ add_shortcode('wpb_childpages', 'wpb_list_child_pages');
  */
 add_action('init', 'remove_editor_init');
 function remove_editor_init() {
-    // if post not set, just return 
+    // if post not set, just return
     // fix when post not set, throws PHP's undefined index warning
     if (isset($_GET['post'])) {
         $post_id = $_GET['post'];

@@ -204,23 +204,58 @@ $meta_boxes = array(
 				'desc' => 'The URL for the youtube video on the homepage'
 			)
 		)
-	), 
+	),
 
 array(
-		'id' => 'reports-upload-box',
-		'title' => 'Reports upload box',
-		//'slug' => 'report',
-		'pages' => array( 'report' ),
-		'context' => 'normal',
-		'priority' => 'low',
-		'fields' => array(
-			array(
-				'id' => 'report-upload',
-				'label' => 'PDF upload',
-				'type' => 'upload',
-				'desc' => 'Upload PDF version of report'
-			)
+	'id' => 'reports-upload-box',
+	'title' => 'Reports upload box',
+	//'slug' => 'report',
+	'pages' => array( 'report' ),
+	'context' => 'normal',
+	'priority' => 'low',
+	'fields' => array(
+		array(
+			'id' => 'report-upload',
+			'label' => 'PDF upload',
+			'type' => 'upload',
+			'desc' => 'Upload PDF version of report'
 		)
-	),
+	)
+),
+
+array(
+	'id' => 'jobs',
+	'title' => 'Jobs',
+	//'slug' => 'report',
+	'pages' => array( 'job' ),
+	'context' => 'normal',
+	'priority' => 'low',
+	'fields' => array(
+		array(
+			'id' => 'description',
+			'label' => 'Description',
+			'type' => 'textarea-simple',
+			'desc' => ''
+		),
+		array(
+			'id' => 'time-commitment',
+			'label' => 'Time commitment',
+			'type' => 'text',
+			'desc' => ''
+		),
+		array(
+			'id' => 'rcr',
+			'label' => 'Recruitment Campaign Reference',
+			'type' => 'text',
+			'desc' => ''
+		),
+		array(
+			'id' => 'closing-date',
+			'label' => 'Closing Date',
+			'type' => 'date-picker',
+			'desc' => ''
+		),
+	)
+),
 
 );
