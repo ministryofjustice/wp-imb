@@ -6901,6 +6901,12 @@ input[type="submit"]:hover {
 .vacancies h3 {
   margin-top: 0;
 }
+article.job {
+  padding: 1em;
+}
+article.job:nth-child(odd) {
+  background: #f6f9fb;
+}
 h4.sort-by a {
   background: #e1eaf1;
   padding: 10px;
