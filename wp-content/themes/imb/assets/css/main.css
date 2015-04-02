@@ -6898,6 +6898,9 @@ input[type="submit"]:hover {
 .vacancies ul li {
   margin-bottom: .5em;
 }
+.vacancies h3 {
+  margin-top: 0;
+}
 h4.sort-by a {
   background: #e1eaf1;
   padding: 10px;
