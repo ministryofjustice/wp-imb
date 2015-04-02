@@ -1,4 +1,4 @@
-<?php if(!is_post_type_archive('job' )): ?>
+<?php if(!is_page('current-vacancies' )): ?>
 <article <?php post_class(); ?>>
   <header>
     <h2 class="entry-title">

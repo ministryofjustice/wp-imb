@@ -1,4 +1,29 @@
 <?php
+/* 
+Template Name: Job vacancies
+*/
+?>
+
+
+<?php while (have_posts()) : the_post(); ?>
+
+<?php get_template_part('templates/page', 'header'); ?>
+
+<div class="row vacancies">
+
+<div class="col-sm-5">
+
+<?php the_content(); ?>
+
+</div>
+
+<div class="col-sm-7">
+
+
+<h4 class="sort-by">Sort by: <a href="<?php echo the_permalink() ?>">Prison</a> <a href="<?php echo the_permalink() ?>?sort=date">Closing Date</a></h4>
+<hr>
+
+<?php
 $sort = get_query_var( 'sort' );
 if(!empty($sort)){
   if($sort == 'date') {
@@ -22,11 +47,6 @@ $query = new WP_Query($args);
 
 ?>
 
-
-<?php get_template_part('templates/page', 'header'); ?>
-
-<h4 class="sort-by">Sort by: <a href="/job">Prison</a> <a href="/job/?sort=date">Closing Date</a></h4>
-<hr>
 <?php if (!$query->have_posts()) : ?>
   <div class="alert alert-warning">
     <?php _e('Sorry, no results were found.', 'roots'); ?>
@@ -47,5 +67,8 @@ $query = new WP_Query($args);
   </nav>
 <?php endif; ?>
 
+</div>
 
+</div>
 
+<?php endwhile; ?>

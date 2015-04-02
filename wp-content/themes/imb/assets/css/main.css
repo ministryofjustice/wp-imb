@@ -6887,10 +6887,21 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #f6f9fb;
 }
-.sort-by a {
-  background: red;
+/* Current vacancies */
+.vacancies .col-sm-7 {
+  border-left: 1px solid #eeeeee;
 }
-body {
-  background: red;
+.vacancies ul {
+  list-style-type: disc;
+  margin: 20px 0 0 20px;
+}
+.vacancies ul li {
+  margin-bottom: .5em;
+}
+h4.sort-by a {
+  background: #e1eaf1;
+  padding: 10px;
+  font-size: 71%;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
