@@ -6403,6 +6403,14 @@ ul a {
   min-width: 200px;
   vertical-align: top;
 }
+.top-margin-sm {
+  margin-top: 1em;
+}
+@media (min-width: 768px) {
+  .top-margin-sm {
+    margin-top: 0;
+  }
+}
 .gallery-row {
   padding: 10px 0;
 }
