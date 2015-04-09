@@ -8,6 +8,7 @@
 
 function add_query_vars_filter($vars){
   $vars[] = "sort";
+  $vars[] = "vs";
   return $vars;
 }
 add_filter('query_vars', 'add_query_vars_filter');

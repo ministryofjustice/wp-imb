@@ -6915,6 +6915,32 @@ article.job {
 article.job:nth-child(odd) {
   background: #f6f9fb;
 }
+form.vs-search {
+  width: 100%;
+  float: none;
+  padding-bottom: 1em;
+}
+@media (min-width: 768px) {
+  form.vs-search {
+    width: 44%;
+    float: right;
+    margin-top: -7px;
+  }
+}
+.job-sort {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #c5c5c5;
+  border-bottom: 1px solid #c5c5c5;
+  padding-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .job-sort {
+    margin-top: 0;
+    border-top: 0;
+    padding-top: 0;
+  }
+}
 h4.sort-by a {
   background: #e1eaf1;
   padding: 10px;
