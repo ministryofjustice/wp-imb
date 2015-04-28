@@ -18,7 +18,7 @@
   <hr/>
 </article>
 <?php else: ?>
-<article <?php post_class(); ?>>
+<article <?php post_class(); ?> id="job-<?= get_the_ID(); ?>">
   <header>
     <h3 class="entry-title">
       Volunteer IMB Board Members required at <?php the_title(); ?>

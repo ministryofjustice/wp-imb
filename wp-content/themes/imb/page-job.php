@@ -31,15 +31,11 @@ Template Name: Job vacancies
   </div>
 </form>
 
-<h4 class="sort-by">Sort by: <a href="<?php echo the_permalink() ?>">Closing Date</a> <a href="<?php echo the_permalink() ?>?sort=title">Prison</a> </h4>
+<h4 class="sort-by">Sort by: <a href="<?php echo get_permalink(1653) ?>">Closing Date</a> <a href="<?php echo get_permalink(1653) ?>?sort=title">Prison</a> </h4>
 
 </div>
 
-
-
-
 <?php
-
 
 $sort = get_query_var( 'sort' );
 if(!empty($sort)){
@@ -69,8 +65,38 @@ if(!empty($vs)){
   $args = array_merge($args, $search);
 }
 $query = new WP_Query($args);
-
+$query2 = $query;
 ?>
+
+
+<?php if ($query2->have_posts()) : ?>
+  <?php $locations = array(); ?>
+  <?php while ($query2->have_posts()) : $query2->the_post(); ?>
+    <?php $location = get_field( 'map', get_the_ID() ); ?>
+    <?php if( !empty( $location ) ): ?>
+      <?php $location['title'] = get_the_title(); ?>
+      <?php $location['id'] = 'job-' . get_the_ID(); ?>
+      <?php $locations[] = $location; ?>
+    <?php endif; ?>
+  <?php endwhile; ?>
+<?php endif; ?>
+
+<?php if( !empty($locations) ): ?>
+  <a href="#" class="view-map">View on a map</a>
+  <div class="acf-map">
+    <?php foreach($locations as $location): ?>
+      <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>">
+        <h5><?php echo $location['title']; ?></h5>
+        <p><a href="#<?php echo $location['id']; ?>">Click here for more info</a></p>
+      </div>
+  <?php endforeach; ?>
+  </div>
+<?php endif; ?>
+
+
+
+
+
 
 <?php if (!$query->have_posts()) : ?>
   <div class="alert alert-warning">
