@@ -34,6 +34,7 @@ Template Name: FAQs page
 	  		<?php
 			    $args = array(
 			        'post_type' => 'faq',
+			        'orderby' => 'menu_order',
 			        'order' => 'ASC',
 			        'posts_per_page' => 20
 			    );
