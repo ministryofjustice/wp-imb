@@ -6411,6 +6411,12 @@ ul a {
     margin-top: 0;
   }
 }
+.acf-map {
+  width: 100%;
+  height: 400px;
+  border: #ccc solid 1px;
+  margin: 20px 0;
+}
 .gallery-row {
   padding: 10px 0;
 }
