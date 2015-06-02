@@ -80,7 +80,9 @@ $query2 = $query;
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
-
+<p>&nbsp;</p>
+<p><strong>We sincerely apologise for the lack of current vacancies advertised on this page. This is due to the fact that all recruitment activity for public appointments was officially suspended prior to the General Election in the period known as 'purdah'. Recruitment for IMBs will resume within the next couple of weeks, once official notification has been received from the Ministry of Justice.</strong></p>
+<p>&nbsp;</p>
 <?php if( !empty($locations) ): ?>
   <a href="#" class="view-map">View on a map</a>
   <div class="acf-map">
