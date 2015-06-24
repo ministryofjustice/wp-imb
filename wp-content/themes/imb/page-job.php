@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
 Template Name: Job vacancies
 */
 ?>
@@ -31,7 +31,7 @@ Template Name: Job vacancies
   </div>
 </form>
 
-<h4 class="sort-by">Sort by: <a href="<?php echo get_permalink(1653) ?>">Closing Date</a> <a href="<?php echo get_permalink(1653) ?>?sort=title">Prison</a> </h4>
+<h4 class="sort-by">Sort by: <a href="<?php echo get_permalink(1653) ?>?sort=close">Closing Date</a> <a href="<?php echo get_permalink(1653) ?>?sort=title">Prison</a> </h4>
 
 </div>
 
@@ -45,14 +45,17 @@ if(!empty($sort)){
       'orderby' => 'title',
       //'meta_key' => 'closing-date'
     );
+  } elseif($sort == 'close') {
+    $orderby = array(
+      'orderby' => 'meta_value',
+      'meta_key' => 'closing-date',
+      'order' => 'ASC'
+    );
   }
 }
 $args = array(
   'post_type' => 'job',
   'posts_per_page' => -1,
-  'orderby' => 'meta_value',
-  'meta_key' => 'closing-date',
-  'order' => 'ASC'
 );
 if(!empty($orderby)) {
   $args = array_merge($args, $orderby);
