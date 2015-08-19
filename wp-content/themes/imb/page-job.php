@@ -11,13 +11,13 @@ Template Name: Job vacancies
 
 <div class="row vacancies">
 
-<div class="col-sm-5">
+<div class="col-sm-5 col-sm-push-7">
 
 <?php the_content(); ?>
 
 </div>
 
-<div class="col-sm-7">
+<div class="col-sm-7 col-sm-pull-5">
 
 <div class="job-sort">
 
