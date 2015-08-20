@@ -78,7 +78,7 @@ $query2 = $query;
     <?php $location = get_field( 'map', get_the_ID() ); ?>
     <?php if( !empty( $location ) ): ?>
       <?php $location['title'] = get_the_title(); ?>
-      <?php $location['id'] = 'job-' . get_the_ID(); ?>
+      <?php $location['id'] = get_the_ID(); ?>
       <?php $locations[] = $location; ?>
     <?php endif; ?>
   <?php endwhile; ?>
@@ -90,7 +90,7 @@ $query2 = $query;
     <?php foreach($locations as $location): ?>
       <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>">
         <h5><?php echo $location['title']; ?></h5>
-        <p><a href="#<?php echo $location['id']; ?>">Click here for more info</a></p>
+        <p><a href="#" onclick="return jumpToVacancy(<?php echo $location['id']; ?>)">Click here for more info</a></p>
       </div>
   <?php endforeach; ?>
   </div>
