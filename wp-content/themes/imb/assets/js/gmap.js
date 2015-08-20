@@ -146,7 +146,8 @@ function center_map( map ) {
 
 $(document).ready(function(){
 
-	$('.view-map').click(function() {
+	$('.view-map').click(function(e) {
+		e.preventDefault();
 		$('.view-map').hide();
 		$('.acf-map').show();
 		render_map( $('.acf-map') );
@@ -155,3 +156,21 @@ $(document).ready(function(){
 });
 
 })(jQuery);
+
+function jumpToVacancy(vacancyId) {
+	var vacancyElId = '#job-' + vacancyId;
+
+	window.location.hash = vacancyElId;
+
+	var setPanel = function(action, elements) {
+		$.each(elements, function(k, el) {
+			var collapse = $('.collapse', el);
+			collapse.collapse(action);
+		});
+	}
+
+	setPanel('show', $(vacancyElId));
+	//setPanel('hide', $('.panel:not(' + vacancyElId + ')'));
+
+	return false;
+}

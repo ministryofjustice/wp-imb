@@ -11,13 +11,13 @@ Template Name: Job vacancies
 
 <div class="row vacancies">
 
-<div class="col-sm-5">
+<div class="col-sm-5 col-sm-push-7">
 
 <?php the_content(); ?>
 
 </div>
 
-<div class="col-sm-7">
+<div class="col-sm-7 col-sm-pull-5">
 
 <div class="job-sort">
 
@@ -78,7 +78,7 @@ $query2 = $query;
     <?php $location = get_field( 'map', get_the_ID() ); ?>
     <?php if( !empty( $location ) ): ?>
       <?php $location['title'] = get_the_title(); ?>
-      <?php $location['id'] = 'job-' . get_the_ID(); ?>
+      <?php $location['id'] = get_the_ID(); ?>
       <?php $locations[] = $location; ?>
     <?php endif; ?>
   <?php endwhile; ?>
@@ -90,7 +90,7 @@ $query2 = $query;
     <?php foreach($locations as $location): ?>
       <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>">
         <h5><?php echo $location['title']; ?></h5>
-        <p><a href="#<?php echo $location['id']; ?>">Click here for more info</a></p>
+        <p><a href="#" onclick="return jumpToVacancy(<?php echo $location['id']; ?>)">Click here for more info</a></p>
       </div>
   <?php endforeach; ?>
   </div>
@@ -108,9 +108,11 @@ $query2 = $query;
   <?php get_search_form(); ?>
 <?php endif; ?>
 
-<?php while ($query->have_posts()) : $query->the_post(); ?>
-  <?php get_template_part('templates/content', get_post_format()); ?>
-<?php endwhile; ?>
+<div class="vacancies-list panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <?php while ($query->have_posts()) : $query->the_post(); ?>
+    <?php get_template_part('templates/vacancy'); ?>
+  <?php endwhile; ?>
+</div>
 
 <?php if ($query->max_num_pages > 1) : ?>
   <nav class="post-nav">
