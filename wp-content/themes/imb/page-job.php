@@ -108,9 +108,11 @@ $query2 = $query;
   <?php get_search_form(); ?>
 <?php endif; ?>
 
-<?php while ($query->have_posts()) : $query->the_post(); ?>
-  <?php get_template_part('templates/content', get_post_format()); ?>
-<?php endwhile; ?>
+<div class="vacancies-list panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <?php while ($query->have_posts()) : $query->the_post(); ?>
+    <?php get_template_part('templates/vacancy'); ?>
+  <?php endwhile; ?>
+</div>
 
 <?php if ($query->max_num_pages > 1) : ?>
   <nav class="post-nav">

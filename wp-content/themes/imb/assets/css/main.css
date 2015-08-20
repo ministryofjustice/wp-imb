@@ -6924,11 +6924,8 @@ input[type="submit"]:hover {
 .vacancies h3 {
   margin-top: 0;
 }
-article.job {
-  padding: 1em;
-}
-article.job:nth-child(odd) {
-  background: #f6f9fb;
+.vacancies-list {
+  margin: 20px 0;
 }
 form.vs-search {
   width: 100%;
