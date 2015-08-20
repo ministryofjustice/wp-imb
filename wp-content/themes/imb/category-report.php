@@ -30,30 +30,31 @@ Template Name: Category report archive
 		        while ( $postslist->have_posts() ) : $postslist->the_post(); 
 		    		if(get_post_meta(get_the_ID(),'report-upload',true)):
 
-		    		$fname = get_post_meta(get_the_ID(),'report-upload',true);
+                        $fname = get_post_meta(get_the_ID(),'report-upload',true);
 
-		             echo '<li><h4><a href="';
-		                 /*the_permalink();*/ echo get_post_meta(get_the_ID(),'report-upload',true);
-		             echo '">';
-		                 the_title();
-		             echo '</a> <span class="file-meta"> PDF, '; 
+                        echo '<li><h4><a href="';
+                        echo get_post_meta(get_the_ID(),'report-upload',true);
+                        echo '" target="_blank">';
+                             the_title();
+                        echo '</a> ';
 
-	                  $attachment_id = get_attachment_id_from_src($fname);
+                        $attachment_id = get_attachment_id_from_src($fname);
+                        $attachment_path = get_attached_file($attachment_id);
 
-	                  $myfile = filesize( get_attached_file( $attachment_id ) ); 
+                        $docsize = size_format(filesize($attachment_path));
+                        $filetype = wp_check_filetype($attachment_path);
 
-	                  $docsize = size_format($myfile);
+                        echo '<span class="file-meta">';
+                        echo strtoupper($filetype['ext']) . ', ';
+                        echo $docsize;
+                        echo '</span>';
 
-	                  echo $docsize;
-                  
 
-		             echo '</span></h4>';
-		             // echo '<h4><span class="file-meta">Area: Immigration Detention Estate</span></h4>';
-					 echo '</li>';
-				endif;
-
-		         endwhile;  
-		         	endif;
+                        echo '</h4>';
+                        echo '</li>';
+				    endif;
+                endwhile;
+            endif;
 		?>
 
 	</ul>
