@@ -25,7 +25,7 @@ function render_map( $el ) {
 		mapTypeId	: google.maps.MapTypeId.ROADMAP
 	};
 
-	// create map	        	
+	// create map
 	var map = new google.maps.Map( $el[0], args);
 
 	// add a markers reference
@@ -167,7 +167,7 @@ function jumpToVacancy(vacancyId) {
 			var collapse = $('.collapse', el);
 			collapse.collapse(action);
 		});
-	}
+	};
 
 	setPanel('show', $(vacancyElId));
 	//setPanel('hide', $('.panel:not(' + vacancyElId + ')'));
