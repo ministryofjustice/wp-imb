@@ -1,13 +1,10 @@
 <?php
-/* 
+/*
 Template Name: Category report archive
 */
 ?>
 
-
-<div class="page-header">
-	<?php the_title( '<h1>', '</h1>' ); ?>
-</div>
+<?php get_template_part('templates/page', 'header'); ?>
 
 <div class="archive-links">
 	<ul>
@@ -16,18 +13,18 @@ Template Name: Category report archive
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		$year = $post->post_name;
 
-		$args = array( 
-			'posts_per_page' => 30, 
+		$args = array(
+			'posts_per_page' => 30,
 			'paged' => $paged,
-			'report_year' => $year, 
-			'order'=> 'ASC', 
+			'report_year' => $year,
+			'order'=> 'ASC',
 			'orderby' => 'title',
 			'post_type' => 'report' );
 
 		    $postslist = new WP_Query( $args );
 
 		    if ( $postslist->have_posts() ) :
-		        while ( $postslist->have_posts() ) : $postslist->the_post(); 
+		        while ( $postslist->have_posts() ) : $postslist->the_post();
 		    		if(get_post_meta(get_the_ID(),'report-upload',true)):
 
                         $fname = get_post_meta(get_the_ID(),'report-upload',true);
