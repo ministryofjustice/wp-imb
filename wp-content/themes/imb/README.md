@@ -1,5 +1,5 @@
 wp-lawcom
 =========
 
-WordPress theme for Law Commission
+WordPress theme for Independent Monitoring Board
 
