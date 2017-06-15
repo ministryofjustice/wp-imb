@@ -4,8 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9175ed30d9f3c70aeb722a788bd79012",
+    "content-hash": "2fd95392314ff20621da02436b36f716",
     "packages": [
+        {
+            "name": "acf/advanced-custom-fields-pro",
+            "version": "5.5.14",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.wp.dsd.io/dist/acf/advanced-custom-fields-pro/acf-advanced-custom-fields-pro-5.5.14.zip",
+                "reference": null,
+                "shasum": "4a9dcdd47eb381116b85501bfa4b57a9af100f7b"
+            },
+            "type": "wordpress-plugin"
+        },
         {
             "name": "composer/installers",
             "version": "v1.2.0",
@@ -483,6 +494,26 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "wpackagist-plugin/advanced-responsive-video-embedder",
+            "version": "8.6.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-responsive-video-embedder/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-responsive-video-embedder.zip?timestamp=1494981473",
+                "reference": "trunk",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-responsive-video-embedder/"
+        },
+        {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
             "version": "5.0.1",
             "source": {
@@ -493,7 +524,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.0.1.zip",
-                "reference": null,
+                "reference": "tags/5.0.1",
                 "shasum": null
             },
             "require": {
@@ -501,6 +532,86 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
+        },
+        {
+            "name": "wpackagist-plugin/internal-linking-for-scheduled-posts",
+            "version": "1.01",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/internal-linking-for-scheduled-posts/",
+                "reference": "tags/1.01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/internal-linking-for-scheduled-posts.1.01.zip",
+                "reference": "tags/1.01",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/internal-linking-for-scheduled-posts/"
+        },
+        {
+            "name": "wpackagist-plugin/metronet-reorder-posts",
+            "version": "2.4.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/metronet-reorder-posts/",
+                "reference": "tags/2.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/metronet-reorder-posts.2.4.0.zip",
+                "reference": "tags/2.4.0",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/metronet-reorder-posts/"
+        },
+        {
+            "name": "wpackagist-plugin/ninja-forms",
+            "version": "3.1.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ninja-forms/",
+                "reference": "tags/3.1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.1.4.zip",
+                "reference": "tags/3.1.4",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ninja-forms/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "4.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/4.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         }
     ],
     "packages-dev": [
