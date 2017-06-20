@@ -263,45 +263,48 @@ array(
 
 if( function_exists('register_field_group') ):
 
-register_field_group(array (
-	'key' => 'group_553f8f4ba3227',
-	'title' => 'Vacany Map',
-	'fields' => array (
-		array (
-			'key' => 'field_553f8f672ac4f',
-			'label' => 'Map',
-			'name' => 'map',
-			'prefix' => '',
-			'type' => 'google_map',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array (
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'center_lat' => '',
-			'center_lng' => '',
-			'zoom' => '',
-			'height' => '',
-		),
-	),
-	'location' => array (
-		array (
-			array (
-				'param' => 'post_type',
-				'operator' => '==',
-				'value' => 'job',
-			),
-		),
-	),
-	'menu_order' => 0,
-	'position' => 'normal',
-	'style' => 'default',
-	'label_placement' => 'top',
-	'instruction_placement' => 'label',
-	'hide_on_screen' => '',
-));
+  /**
+   * Use Advanced Custom Fields (ACF) to register the 'map' field to the 'job' CPT
+   */
+  register_field_group(array (
+    'key' => 'group_553f8f4ba3227',
+    'title' => 'Vacany Map',
+    'fields' => array (
+      array (
+        'key' => 'field_553f8f672ac4f',
+        'label' => 'Map',
+        'name' => 'map',
+        'prefix' => '',
+        'type' => 'google_map',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array (
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'center_lat' => '',
+        'center_lng' => '',
+        'zoom' => '',
+        'height' => '',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'job',
+        ),
+      ),
+    ),
+    'menu_order' => 0,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'hide_on_screen' => '',
+  ));
 
 endif;
