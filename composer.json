@@ -56,7 +56,8 @@
     "wpackagist-plugin/metronet-reorder-posts": "*",
     "wpackagist-plugin/ninja-forms": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/option-tree": "*"
+    "wpackagist-plugin/option-tree": "*",
+    "ministryofjustice/wp-user-roles": "^0.1.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
