@@ -1,3 +1,4 @@
 web/app/uploads/*
 web/wp
 vendor/*
+.editorconfig
