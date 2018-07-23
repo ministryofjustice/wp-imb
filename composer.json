@@ -1,28 +1,8 @@
 {
-  "name": "roots/bedrock",
+  "name": "IMB",
   "type": "project",
-  "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
-  "authors": [
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
-    }
-  ],
-  "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
+  "description": "This is a Bedrock based (https://roots.io/bedrock/) WordPress website for the Independent Monitoring Boards (https://imb.org.uk) - a group of volunteers who monitor the day-to-day life in their local prison or removal centre and ensure that proper standards of care and decency are maintained.",
+  "homepage": "https://github.com/ministryofjustice/wp-imb",
   "config": {
     "preferred-install": "dist"
   },
