@@ -1,11 +1,12 @@
 # PhpStorm
-#.idea
+.idea
 
 # Application
 web/app/languages
 web/app/plugins/*
 !web/app/plugins/.gitkeep
-web/app/mu-plugins/*/
+web/app/mu-plugins/*
+!web/app/mu-plugins/.gitkeep
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
@@ -25,4 +26,4 @@ vendor/*
 
 # Theme
 web/app/themes/imb/node_modules
-
+web/app/themes/imb/assets/vendor
