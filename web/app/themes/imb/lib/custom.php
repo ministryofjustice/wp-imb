@@ -158,7 +158,7 @@ add_action('customize_register', 'imb_customizer');
  *
  * @return string
  */
-/*function moj_wp_version()
+function moj_wp_version()
 {
   global $wp_version;
 
@@ -170,4 +170,4 @@ add_action('rest_api_init', function () {
     'methods' => 'GET',
     'callback' => 'moj_wp_version'
   ));
-});*/
+});
