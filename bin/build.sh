@@ -24,7 +24,7 @@ fi
 # Build theme assets here
 cd web/app/themes/imb
 npm install
-npm run dev
+npm run production
 rm -rf node_modules
 cd ../../../..
 
