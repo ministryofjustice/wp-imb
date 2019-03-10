@@ -41,20 +41,20 @@ Template Name: FAQs page
 			    $the_query = new WP_Query( $args );
 			?>
 
-	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	<div class="card-group" id="accordion" role="tablist" aria-multiselectable="true">
 
 		<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-		  <div class="panel panel-default">
-		    <div class="panel-heading" role="tab" id="headingOne">
-		      <h4 class="panel-title">
-		        <a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php the_ID(); ?>" aria-expanded="true" aria-controls="collapse<?php the_ID(); ?>">
+		  <div class="card card-default">
+		    <div class="card-heading" role="tab" id="headingOne">
+		      <h4 class="card-title">
+		        <a data-toggle="collapse" href="#collapse<?php the_ID(); ?>" aria-expanded="true" aria-controls="collapse<?php the_ID(); ?>">
 		          <?php the_title(); ?>
 		        </a>
 		      </h4>
 		    </div>
-		    <div id="collapse<?php the_ID(); ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php the_ID(); ?>">
-		      <div class="panel-body">
+		    <div id="collapse<?php the_ID(); ?>" class="card-collapse collapse" role="tabpanel" data-parent="#accordion" aria-labelledby="heading<?php the_ID(); ?>">
+		      <div class="card-body">
 		        <?php the_content(); ?>
 		      </div>
 		    </div>

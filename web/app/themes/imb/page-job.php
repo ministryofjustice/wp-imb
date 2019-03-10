@@ -11,13 +11,13 @@ Template Name: Job vacancies
 
 <div class="row vacancies">
 
-<div class="col-sm-5 col-sm-push-7">
+<div class="col-sm-5 order-last">
 
 <?php the_content(); ?>
 
 </div>
 
-<div class="col-sm-7 col-sm-pull-5">
+<div class="col-sm-7 order-first">
 
 <div class="job-sort">
 
@@ -85,15 +85,15 @@ $query2 = $query;
 <?php endif; ?>
 
 <?php if( !empty($locations) ): ?>
-  <a href="#" class="view-map">View on a map</a>
+  <!--<a href="#" class="view-map">View on a map</a>
   <div class="acf-map">
-    <?php foreach($locations as $location): ?>
-      <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>">
-        <h5><?php echo $location['title']; ?></h5>
-        <p><a href="#" onclick="return jumpToVacancy(<?php echo $location['id']; ?>)">Click here for more info</a></p>
+    <?php /*foreach($locations as $location): */?>
+      <div class="marker" data-lat="<?php /*echo $location['lat']; */?>" data-lng="<?php /*echo $location['lng']; */?>">
+        <h5><?php /*echo $location['title']; */?></h5>
+        <p><a href="#" onclick="return jumpToVacancy(<?php /*echo $location['id']; */?>)">Click here for more info</a></p>
       </div>
-  <?php endforeach; ?>
-  </div>
+  <?php /*endforeach; */?>
+  </div>-->
 <?php endif; ?>
 
 
@@ -108,7 +108,7 @@ $query2 = $query;
   <?php get_search_form(); ?>
 <?php endif; ?>
 
-<div class="vacancies-list panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="vacancies-list card-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
   <?php while ($query->have_posts()) : $query->the_post(); ?>
     <?php get_template_part('templates/vacancy'); ?>
   <?php endwhile; ?>

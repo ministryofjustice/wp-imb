@@ -1,13 +1,13 @@
-<div <?php post_class('panel panel-default'); ?> id="job-<?= get_the_ID(); ?>">
-    <div class="panel-heading" role="tab" id="heading<?php the_ID(); ?>">
-        <h3 class="panel-title entry-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php the_ID(); ?>" aria-expanded="false" aria-controls="collapse<?php the_ID(); ?>">
+<div <?php post_class('card card-default'); ?> id="job-<?= get_the_ID(); ?>">
+    <div class="card-heading" role="tab" id="heading<?php the_ID(); ?>">
+        <h3 class="card-title entry-title">
+            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse<?php the_ID(); ?>" aria-expanded="false" aria-controls="collapse<?php the_ID(); ?>">
                 <?php the_title(); ?>
             </a>
         </h3>
     </div>
-    <div id="collapse<?php the_ID(); ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php the_ID(); ?>">
-        <div class="panel-body">
+    <div id="collapse<?php the_ID(); ?>" class="card-collapse collapse" aria-labelledby="heading<?php the_ID(); ?>" data-parent="#accordion">
+        <div class="card-body">
             <?php $description = get_post_meta( $post->ID, 'description', true ); ?>
             <?php if(!empty($description)): ?>
                 <p><?= $description; ?></p>

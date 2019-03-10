@@ -1,0 +1,13 @@
+// Captions
+.wp-caption {
+  @extend .thumbnail !optional;
+}
+
+.wp-caption-text {
+    @extend .caption !optional;
+}
+
+// Gallery shortcode
+.gallery-row {
+  padding: .6rem 0;
+}

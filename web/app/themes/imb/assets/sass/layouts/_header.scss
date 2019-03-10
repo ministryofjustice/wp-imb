@@ -1,13 +1,13 @@
 
 .navbar-default {
-	background-color: @navbar-default-bg;
+	background-color: $navbar-default-bg;
 	border: 0;
 }
 
 /* - - - - - - Logo - - - - - - */
 
 #branding {
-	margin: 1em 0 0 0;
+	margin: .4em 0 0 0;
 	display: inline-block;
 	width: 33%;
 
@@ -25,7 +25,7 @@
 }
 
 .navbar {
-	margin-bottom: .5em;
+	margin-bottom: 0em;
 }
 
 .navbar-header {
@@ -55,7 +55,6 @@
 	@media only screen and (min-width: 768px) {
 
 	}
-
 }
 
 .navbar-default .navbar-nav li {
@@ -89,27 +88,27 @@
 }
 
 .navbar-default .navbar-nav li a, .navbar-default .navbar-nav > .open > a {
-	color: @navbar-default-link-color;
+	color: $navbar-default-link-color;
 	display: block;
 	font-weight: 500;
 	font-size: .9em;
 	padding: .55em 0;
-	//background-color: @navbar-default-link-bg;
+	//background-color: $navbar-default-link-bg;
 
 	&:hover {
-		background-color: lighten(@brand-primary, 6%);
+		background-color: lighten($brand-primary, 6%);
 	}
 
 	@media only screen and (min-width: 768px) {
 
-		//background: @navbar-default-link-bg;
-		border-right: 2px solid @brand-secondary;
+		//background: $navbar-default-link-bg;
+		border-right: 2px solid $brand-secondary;
 
 	}
 
 	@media only screen and (min-width: 992px) {
 		font-size: 1em;
-		padding: .515em 0;
+		padding: .3em 0;
 	}
 }
 
@@ -117,26 +116,26 @@
 	border-right: 0;
 
 	&:hover {
-		background: @navbar-default-link-hover-bg;
+		background: $navbar-default-link-hover-bg;
 	}
 }
 
 .navbar-default .navbar-nav li:last-child a {
-	background: @brand-primary;
+	background: $brand-primary;
 }
 
 .navbar-default .navbar-nav li.active:last-child a {
-	background: @navbar-default-link-hover-bg;
+	background: $navbar-default-link-hover-bg;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: @navbar-default-link-color;
-	background-color: @navbar-default-link-hover-bg;
+	color: $navbar-default-link-color;
+	background-color: $navbar-default-link-hover-bg;
 
 }
 
 .navbar-default button.navbar-toggle, .navbar-default button.navbar-toggle:focus, .navbar-default button.navbar-toggle:active, .navbar-default button.navbar-toggle:hover {
-	background: @brand-primary;
+	background: $brand-primary;
 }
 
 
@@ -161,13 +160,14 @@
 
 	@media only screen and (min-width: 768px) {
 		//margin-top: 4px;
+
 		&:first-child {
 			margin-top: 0;
 		}
 	}
 
 	a {
-		background: @brand-primary;
+		background: $brand-primary;
 		padding: 8px;
 		width: 100%;
 		height: 100%;
@@ -185,8 +185,8 @@
 	// ul.dropdown-menu li a:hover,
 	// ul.dropdown-menu li a:active,
 	// ul.dropdown-menu li a:focus {
-	//   // background: lighten(@brand-primary, 6%);
-	//   background: @navbar-default-link-hover-bg;
+	//   // background: lighten($brand-primary, 6%);
+	//   background: $navbar-default-link-hover-bg;
 	//   color: green;
 	//   border-right: 0;
 
@@ -195,27 +195,22 @@
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-	color: @dark-text-clr;
+	color: $dark-text-clr;
 }
 
 /* - - - - - - Search - - - - - - */
 
 #search {
 	float: right;
-	display: inline-block;
-	margin: 1em 0 0 0;
-	width: 50%;
+	margin: .5em 0 0 0;
+	width: 15%;
 
-	@media only screen and (min-width: 768px) {
-		width: 36%;
-		margin: 1em 0 0 0;
-	}
+	@media only screen and (min-width: 768px) {}
 }
 
 .form-control {
 	border-radius: 0;
 	padding: 6px 12px 2px 8px;
-
 }
 
 .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
