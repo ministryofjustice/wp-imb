@@ -1,12 +1,19 @@
 // Content wrapper
 .wrap { }
 
-/*
 // Main content area
 .main {
-  @include make-sm-column($main-sm-columns);
-  .sidebar-primary & {
-    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
-  }
+	@include media-breakpoint-up(md) {
+	  @include make-sm-column($main-sm-columns);
+		  .sidebar-primary & {
+			@include make-sm-column($main-sm-columns - $sidebar-sm-columns);
+	  }
+	}
+
+	@include media-breakpoint-down(md) {
+		.sidebar-primary & {
+			padding: 0 20px;
+		}
+	}
 }
-*/
+

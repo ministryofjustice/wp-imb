@@ -64,6 +64,11 @@ ul.child-list {
 	display: inline-block;
 	border-bottom: 1px solid $thin-divider-clr;
 	padding-bottom: 1em;
+
+	@include media-breakpoint-down(xs) {
+		padding-left:20px;
+		padding-right:20px;
+	}
 }
 
 .side-item {
@@ -73,6 +78,23 @@ ul.child-list {
 
 	&:last-child {
 		border-bottom: 0;
+	}
+
+	@include media-breakpoint-between(sm, md) {
+		&.quick-links a {
+			padding: 11px;
+			font-size: .9em;
+		}
+		&.quick-links a span {
+			 display:none
+		}
+	}
+
+
+
+	@include media-breakpoint-down(xs) {
+		padding-left:20px;
+		padding-right:20px;
 	}
 }
 

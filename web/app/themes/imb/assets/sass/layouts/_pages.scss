@@ -282,7 +282,7 @@ form.vs-search {
 	width: 100%;
 	float: none;
 	padding-bottom: 1em;
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(md) {
 		width: 44%;
 		float: right;
 		margin-top: -7px;
