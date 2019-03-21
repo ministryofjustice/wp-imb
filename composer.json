@@ -31,7 +31,7 @@
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
     "ministryofjustice/wp-rewrite-media-to-s3": "^0.1.1",
     "acf/advanced-custom-fields-pro": "*",
-    "wpackagist-plugin/advanced-responsive-video-embedder": "*",
+    "wpackagist-plugin/advanced-responsive-video-embedder":"*",
     "wpackagist-plugin/internal-linking-for-scheduled-posts": "*",
     "wpackagist-plugin/metronet-reorder-posts": "*",
     "wpackagist-plugin/ninja-forms": "*",
