@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fe4c1ea586a0c39fad7b2656f46cc03",
+    "content-hash": "8d10b1ff2ea6f4ef9337804ec7580f36",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -349,17 +349,17 @@
         },
         {
             "name": "ministryofjustice/wp-user-roles",
-            "version": "0.1.2",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/wp-user-roles.git",
-                "reference": "85a4e655e5b54dca738c6c06670ff1f0559fd00c"
+                "reference": "2ff57a57ad005ee75f6a3b86fe69e202be101637"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-user-roles/ministryofjustice-wp-user-roles-85a4e655e5b54dca738c6c06670ff1f0559fd00c-zip-bfef65.zip",
-                "reference": "85a4e655e5b54dca738c6c06670ff1f0559fd00c",
-                "shasum": "5fb799887078d06b6d300624ebda0a954e547102"
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-user-roles/ministryofjustice-wp-user-roles-2ff57a57ad005ee75f6a3b86fe69e202be101637-zip-6123a3.zip",
+                "reference": "2ff57a57ad005ee75f6a3b86fe69e202be101637",
+                "shasum": "5157f1e32eda046e5d84e75bbbd0b63ff0c9a341"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -373,14 +373,18 @@
                 {
                     "name": "James Devon",
                     "email": "james.devon@digital.justice.gov.uk"
+                },
+                {
+                    "name": "Damien Wilson",
+                    "email": "damien.wilson@digital.justice.gov.uk"
                 }
             ],
             "description": "A WordPress plugin to create user roles typically required by a MOJDigital WordPress site",
             "support": {
-                "source": "https://github.com/ministryofjustice/wp-user-roles/tree/0.1.2",
+                "source": "https://github.com/ministryofjustice/wp-user-roles/tree/0.2.0",
                 "issues": "https://github.com/ministryofjustice/wp-user-roles/issues"
             },
-            "time": "2019-03-21T11:57:44+00:00"
+            "time": "2019-04-23T21:18:01+00:00"
         },
         {
             "name": "oscarotero/env",
