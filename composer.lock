@@ -349,17 +349,17 @@
         },
         {
             "name": "ministryofjustice/wp-user-roles",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/wp-user-roles.git",
-                "reference": "2ff57a57ad005ee75f6a3b86fe69e202be101637"
+                "reference": "5bc2495d350141b22bdd8d7b7e3928e22c7eb663"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-user-roles/ministryofjustice-wp-user-roles-2ff57a57ad005ee75f6a3b86fe69e202be101637-zip-6123a3.zip",
-                "reference": "2ff57a57ad005ee75f6a3b86fe69e202be101637",
-                "shasum": "5157f1e32eda046e5d84e75bbbd0b63ff0c9a341"
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-user-roles/ministryofjustice-wp-user-roles-5bc2495d350141b22bdd8d7b7e3928e22c7eb663-zip-4c494d.zip",
+                "reference": "5bc2495d350141b22bdd8d7b7e3928e22c7eb663",
+                "shasum": "b64ad12414b240f55ef4cd36813e17c9a62ed212"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -381,10 +381,10 @@
             ],
             "description": "A WordPress plugin to create user roles typically required by a MOJDigital WordPress site",
             "support": {
-                "source": "https://github.com/ministryofjustice/wp-user-roles/tree/0.2.0",
+                "source": "https://github.com/ministryofjustice/wp-user-roles/tree/0.2.1",
                 "issues": "https://github.com/ministryofjustice/wp-user-roles/issues"
             },
-            "time": "2019-04-23T21:18:01+00:00"
+            "time": "2019-04-24T11:57:03+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -737,15 +737,15 @@
         },
         {
             "name": "wpackagist-plugin/option-tree",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/option-tree/",
-                "reference": "tags/2.6.0"
+                "reference": "tags/2.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/option-tree.2.6.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/option-tree.2.7.0.zip",
                 "reference": null,
                 "shasum": null
             },
