@@ -25,7 +25,7 @@ function roots_scripts()
 	$assets = array(
 		'css' => '/assets' . $assets["/css/main.min.css"],
 		'js' => '/assets' . $assets["/js/scripts.min.js"],
-		'jquery' => '//code.jquery.com/jquery-3.3.1.min.js'
+		'jquery' => '//code.jquery.com/jquery-3.4.1.min.js'
 	);
 
 	wp_enqueue_style('roots_css', get_template_directory_uri() . $assets['css'], false, null);
