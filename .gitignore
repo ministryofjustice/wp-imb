@@ -3,19 +3,23 @@
 .DS_*
 ._DS_*
 
+# DB
+*.sql
+
 # Application
 web/app/languages
 web/app/plugins/*
-!web/app/plugins/.gitkeep
-web/app/mu-plugins/*
-!web/app/mu-plugins/.gitkeep
 web/app/upgrade
 web/app/uploads/*
+!web/app/mu-plugins/.gitkeep
+!web/app/plugins/.gitkeep
 !web/app/uploads/.gitkeep
+
 
 # WordPress
 web/wp
 web/.htaccess
+
 
 # Dotenv
 .env
@@ -29,3 +33,5 @@ vendor/*
 # Theme
 web/app/themes/imb/node_modules
 web/app/themes/imb/assets/vendor
+web/app/mu-plugins/wp-user-roles/
+web/app/themes/imb/assets/js/jquery.js
