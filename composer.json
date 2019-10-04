@@ -39,7 +39,8 @@
     "wpackagist-plugin/option-tree": "*",
     "wpackagist-plugin/classic-editor": "*",
     "wpackagist-plugin/fast-user-switching": "*",
-    "ministryofjustice/wp-user-roles": "*"
+    "ministryofjustice/wp-user-roles": "*",
+    "ministryofjustice/wp-moj-components": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
