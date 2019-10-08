@@ -1,5 +1,4 @@
-<?php get_template_part('templates/page', 'header'); ?>
-
+<?php get_template_part('header'); ?>
 <div class="row">
 
 	<div class="col-sm-8">
