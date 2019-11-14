@@ -8,13 +8,18 @@
 
 # Application
 web/app/languages
+web/app/mu-plugins/wp-*/*
 web/app/plugins/*
 web/app/upgrade
 web/app/uploads/*
+
 !web/app/mu-plugins/.gitkeep
 !web/app/plugins/.gitkeep
 !web/app/uploads/.gitkeep
 
+
+# bin
+bin/-dev-*
 
 # WordPress
 web/wp
@@ -33,6 +38,4 @@ vendor/*
 # Theme
 web/app/themes/imb/node_modules
 web/app/themes/imb/assets/vendor
-web/app/mu-plugins/wp-user-roles/
-web/app/mu-plugins/wp-moj-components/
 web/app/themes/imb/assets/js/jquery.js
