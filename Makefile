@@ -18,6 +18,10 @@ run:
 	cp .env.example .env
 	docker-compose up
 
+# Run the application
+down:
+	docker-compose down
+
 # Launch the application, open browser, no stdout
 run-launch:
 	bin/launch.sh
