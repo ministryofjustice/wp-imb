@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "acae71de9e99be1f69ce6a372a004740",
+    "content-hash": "d5b07be1a03609df7f71b2cc644e9f2e",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -796,15 +796,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.4.23",
+            "version": "3.4.24",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.4.23"
+                "reference": "tags/3.4.24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.23.zip"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.4.24.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -832,15 +832,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "13.1",
+            "version": "13.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/13.1"
+                "reference": "tags/13.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.13.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.13.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -850,15 +850,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-analytify",
-            "version": "2.2.13",
+            "version": "3.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-analytify/",
-                "reference": "tags/2.2.13"
+                "reference": "tags/3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-analytify.2.2.13.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-analytify.3.0.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
