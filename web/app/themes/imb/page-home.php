@@ -108,9 +108,7 @@ Template Name: Homepage
 			?>
 			<div class="media main-item video-container">
 				<h2>Latest media</h2>
-					<div class="videoWrapper">
-						<?php echo '<iframe width="560" height="315" src="'. esc_url($video) .'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'; ?>
-					</div>
+						<?php echo '<iframe width="676" height="380" src="'. esc_url($video) .'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'; ?>
 			</div>
       <?php endif; ?>
 
