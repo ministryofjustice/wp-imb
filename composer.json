@@ -39,7 +39,6 @@
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/option-tree": "*",
     "wpackagist-plugin/classic-editor": "*",
-    "wpackagist-plugin/user-switching": "*",
     "ministryofjustice/wp-user-roles": "*",
     "ministryofjustice/cookie-compliance-for-wordpress": "*",
     "ministryofjustice/wp-moj-components": "*"
