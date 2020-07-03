@@ -39,7 +39,7 @@
     "wpackagist-plugin/option-tree": "*",
     "wpackagist-plugin/classic-editor": "*",
     "ministryofjustice/wp-user-roles": "*",
-    "ministryofjustice/cookie-compliance-for-wordpress": "*",
+    "ministryofjustice/cookie-compliance-for-wordpress": "dev-variant-b",
     "ministryofjustice/wp-moj-components": "*"
   },
   "require-dev": {
