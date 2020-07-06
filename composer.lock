@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c82bcd1c744c9aa7dde173cf39c6ee3a",
+    "content-hash": "7ffde49ed80676f160fc59f0d4c69d5f",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -317,17 +317,17 @@
         },
         {
             "name": "ministryofjustice/cookie-compliance-for-wordpress",
-            "version": "1.3.2",
+            "version": "dev-variant-b",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress.git",
-                "reference": "cb04cfb9e912d780f176747dbd6796fb0741f738"
+                "reference": "7436219b49e7c9fe6668d90b45f57d120dd44d35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/cookie-compliance-for-wordpress/ministryofjustice-cookie-compliance-for-wordpress-cb04cfb9e912d780f176747dbd6796fb0741f738-zip-d7164c.zip",
-                "reference": "cb04cfb9e912d780f176747dbd6796fb0741f738",
-                "shasum": "0c89ea4ab1046876a0aeed7c11377f46aa1e045c"
+                "url": "https://api.github.com/repos/ministryofjustice/cookie-compliance-for-wordpress/zipball/7436219b49e7c9fe6668d90b45f57d120dd44d35",
+                "reference": "7436219b49e7c9fe6668d90b45f57d120dd44d35",
+                "shasum": ""
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -352,24 +352,24 @@
             ],
             "description": "WP plugin that presents visitor with a cookie consent banner and opt-out setting page.",
             "support": {
-                "source": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress/tree/1.3.2",
+                "source": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress/tree/variant-b",
                 "issues": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress/issues"
             },
-            "time": "2019-12-23T20:06:00+00:00"
+            "time": "2020-07-03T15:25:18+00:00"
         },
         {
             "name": "ministryofjustice/wp-moj-components",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/wp-moj-components.git",
-                "reference": "f80ad1cda3dd9c01d74b02e11e021e5cb6f0b1e0"
+                "reference": "1f728c926cedc5afdea53272e7b97a4fab3dc511"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-moj-components/ministryofjustice-wp-moj-components-f80ad1cda3dd9c01d74b02e11e021e5cb6f0b1e0-zip-64d040.zip",
-                "reference": "f80ad1cda3dd9c01d74b02e11e021e5cb6f0b1e0",
-                "shasum": "b518ee7bd19ade64c1daccf83aa7d630516a863e"
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-moj-components/ministryofjustice-wp-moj-components-1f728c926cedc5afdea53272e7b97a4fab3dc511-zip-bac561.zip",
+                "reference": "1f728c926cedc5afdea53272e7b97a4fab3dc511",
+                "shasum": "91a18cb80496bd67dee0e9ee6c3595ef4afb6924"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -404,10 +404,10 @@
             ],
             "description": "A plugin to introduce global functions to a collection of WP sites",
             "support": {
-                "source": "https://github.com/ministryofjustice/wp-moj-components/tree/3.2.1",
+                "source": "https://github.com/ministryofjustice/wp-moj-components/tree/3.2.2",
                 "issues": "https://github.com/ministryofjustice/wp-moj-components/issues"
             },
-            "time": "2020-06-30T11:26:21+00:00"
+            "time": "2020-07-02T09:16:23+00:00"
         },
         {
             "name": "ministryofjustice/wp-rewrite-media-to-s3",
@@ -704,24 +704,6 @@
             "time": "2020-06-02T14:06:52+00:00"
         },
         {
-            "name": "wpackagist-plugin/advanced-responsive-video-embedder",
-            "version": "8.10.23",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/advanced-responsive-video-embedder/",
-                "reference": "tags/8.10.23"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-responsive-video-embedder.8.10.23.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/advanced-responsive-video-embedder/"
-        },
-        {
             "name": "wpackagist-plugin/analytify-analytics-dashboard-widget",
             "version": "1.1.3",
             "source": {
@@ -948,7 +930,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ministryofjustice/cookie-compliance-for-wordpress": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
