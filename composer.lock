@@ -321,12 +321,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress.git",
-                "reference": "7436219b49e7c9fe6668d90b45f57d120dd44d35"
+                "reference": "6f15b6c6df5d52d89cf84db51756153fee8916ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ministryofjustice/cookie-compliance-for-wordpress/zipball/7436219b49e7c9fe6668d90b45f57d120dd44d35",
-                "reference": "7436219b49e7c9fe6668d90b45f57d120dd44d35",
+                "url": "https://api.github.com/repos/ministryofjustice/cookie-compliance-for-wordpress/zipball/6f15b6c6df5d52d89cf84db51756153fee8916ec",
+                "reference": "6f15b6c6df5d52d89cf84db51756153fee8916ec",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
                 "source": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress/tree/variant-b",
                 "issues": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress/issues"
             },
-            "time": "2020-07-03T15:25:18+00:00"
+            "time": "2020-07-07T14:36:48+00:00"
         },
         {
             "name": "ministryofjustice/wp-moj-components",
