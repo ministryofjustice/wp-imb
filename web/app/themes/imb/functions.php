@@ -27,7 +27,8 @@ $roots_includes = array(
 //	'/lib/ajax.php', // AJAX setup
 	'/lib/custom.php', // Custom functions
 	'/lib/meta-box-array.php',  // Meta box array
-	'/lib/p2p.php'  // Sets up Posts2Posts
+	'/lib/p2p.php',  // Sets up Posts2Posts
+    '/lib/banner-settings.php'  // Sets up Feedback Banner Settings Page
 );
 
 foreach ( $roots_includes as $file ) {
