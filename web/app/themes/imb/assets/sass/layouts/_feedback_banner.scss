@@ -1,0 +1,21 @@
+.feedback-banner {
+	border: 1px solid  $brand-secondary;
+	padding: 20px;
+	margin: 10px 0;
+
+	h2 {
+		margin-top: 0;
+	}
+
+	.feedback-banner-link {
+		background: $brand-primary;
+		padding: 10px;
+		display: inline-block;
+		color: $dark-text-clr;
+	}
+
+	.feedback-banner-link:hover {
+		background: $navbar-default-link-hover-bg;
+	}
+
+}
