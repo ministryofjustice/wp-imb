@@ -119,6 +119,6 @@ h4.sort-by {
 	}
 
 	.card-group > .card {
-		flex: 1 0 100%;
+		flex: 1 0 100% !important;
 	}
 }
