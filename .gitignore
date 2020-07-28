@@ -13,6 +13,7 @@ web/app/mu-plugins/wp-*/*
 web/app/plugins/*
 web/app/upgrade
 web/app/uploads/*
+web/app/uploads
 
 !web/app/mu-plugins/.gitkeep
 !web/app/plugins/.gitkeep

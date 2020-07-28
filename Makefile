@@ -4,6 +4,13 @@ default: build
 build:
 	bin/build.sh
 
+# Run the project upgrade script
+update:
+	bin/upgrade.sh
+
+upgrade:
+	bin/upgrade.sh
+
 # Remove ignored git files – e.g. composer dependencies and built theme assets
 # But keep .idea directory (PhpStorm config), and uploaded media files
 clean:
@@ -21,6 +28,10 @@ run:
 # Run the application
 down:
 	docker-compose down
+
+# Launch the application, open browser, no stdout
+launch:
+	bin/launch.sh
 
 # Launch the application, open browser, no stdout
 run-launch:
