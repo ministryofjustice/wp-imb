@@ -14,3 +14,9 @@ function roots_get_search_form($form) {
   return $form;
 }
 add_filter('get_search_form', 'roots_get_search_form');
+
+// Add a favicon to the browser tab of the logo
+function imb_add_favicon() {
+    echo '<link rel="shortcut icon" href="' . get_bloginfo('stylesheet_directory') . '/imb_logo_icon.ico" />';
+}
+add_action('wp_head', 'imb_add_favicon');
