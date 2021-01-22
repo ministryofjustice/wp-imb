@@ -2,8 +2,6 @@
 
 <body <?php body_class(); ?>>
 
-<?php do_action('after_body_open_tag'); ?>
-
 <?php
 if ( ! function_exists( 'wp_body_open' ) ) {
 	/**
