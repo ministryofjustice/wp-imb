@@ -109,49 +109,6 @@ function get_current_user_role() {
 }
 
 /**
- * Create IMB editor role
- * The same as normal editor role, but with permission to edit theme options (so IMB can change menus)
- */
-function add_imb_editor_role() {
-    global $wp_roles;
-    if ( ! isset( $wp_roles ) )
-        $wp_roles = new WP_Roles();
-
-    if ($wp_roles->get_role('imb-editor')) {
-        return true;
-    }
-
-    $editor = $wp_roles->get_role('editor');
-
-    // Add a new role with editor caps
-    $imb_editor = $wp_roles->add_role('imb-editor', 'IMB Editor', $editor->capabilities);
-    $imb_editor->add_cap('edit_theme_options');
-}
-add_action('init', 'add_imb_editor_role');
-
-/**
- * Remove unwanted Appearance submenu items when logged in with imb-editor role.
- */
-function adjust_the_wp_menu() {
-    if (get_current_user_role() == 'imb-editor') {
-        remove_submenu_page( 'themes.php', 'widgets.php' );
-        remove_submenu_page( 'themes.php', 'themes.php' );
-    }
-}
-add_action( 'admin_menu', 'adjust_the_wp_menu', 999 );
-
-/**
- * Remove widgets panel from Theme Customiser
- */
-function imb_customizer($wp_customize) {
-    if (get_current_user_role() == 'imb-editor') {
-        $wp_customize->remove_panel('widgets');
-    }
-}
-add_action('customize_register', 'imb_customizer');
-
-
-/**
  * Get the current version of WP
  *
  * This is provided for external resources to resolve the current wp_version
