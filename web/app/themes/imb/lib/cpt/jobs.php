@@ -2,7 +2,8 @@
 
 function job_post_init() {
     $args = array(
-      'public' => true,
+      'public' => false,
+      'show_ui' => true,
       'label'  => 'Current Vacancies',
       'supports'      => array( 'title', 'thumbnail' ),
       'has_archive'   => true,
