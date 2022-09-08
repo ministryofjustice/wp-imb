@@ -13,7 +13,9 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 }
 wp_body_open();
 ?>
-
+<?php
+include "lib/emergency-banner.php";
+?>
 <div class="ccfw-banner-background">
 	<header class="banner" role="banner">
 		<div class="container navbar-expand-md navbar navbar-default navbar-static-top flex-wrap">
