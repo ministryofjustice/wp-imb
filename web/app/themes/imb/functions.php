@@ -26,6 +26,7 @@ $roots_includes = array(
 //	'/lib/theme-options.php', // Theme options
 //	'/lib/ajax.php', // AJAX setup
 	'/lib/custom.php', // Custom functions
+	'lib/emergency-banner-settings.php',
 	'/lib/meta-box-array.php',  // Meta box array
 	'/lib/p2p.php',  // Sets up Posts2Posts
     '/lib/banner-settings.php'  // Sets up Feedback Banner Settings Page
