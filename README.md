@@ -1,6 +1,6 @@
 # IMB
 
-Wordpress theme.
+Custom WordPress theme.
 
 ## Features
 
